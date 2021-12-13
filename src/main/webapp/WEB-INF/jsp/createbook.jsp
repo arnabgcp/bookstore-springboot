@@ -42,7 +42,7 @@ Books Management Application Demo - Running on Google Kubernetes Engine
 
  <div class="content2">
                 <h3>
-                                Use this form to add the details for the new book
+                Use this form to add the details for the new book:
                 </h3>
             </div>
 
