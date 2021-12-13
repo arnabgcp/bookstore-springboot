@@ -45,8 +45,7 @@ steps:
 
 
 
-          sed -i 's|gcr.io/$PROJECT_ID/helloworld:.*|gcr.io/$PROJECT_ID/helloworld:$${VERSION}|' ./kubernetes/deployments/$${TARGET_ENV}/*.yaml
+          sed -i 's|gcr.io/'$PROJECT_ID'/addbook:.*|gcr.io/'$PROJECT_ID'/addbook:$${VERSION}|' ./kubernetes/deployments/$${TARGET_ENV}/*.yaml
           
           kubectl get ns $${NS} || kubectl create ns $${NS}
           kubectl apply --namespace $${NS} --recursive -f kubernetes/deployments/$${TARGET_ENV}
-          kubectl apply --namespace $${NS} --recursive -f kubernetes/services
