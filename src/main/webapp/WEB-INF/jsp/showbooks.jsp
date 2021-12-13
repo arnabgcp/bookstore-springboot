@@ -44,9 +44,12 @@
 <div class="content">
 	Books Management Application Demo - Running on Google Kubernetes Engine
 </div>
+
+
+<div class="content"> </div>
 		
     <div align="center" class="content2">
-    <h3>Below are the available books in stock. Navigate to the menu to edit or delete the books. </h3>
+    <h3>Below are the available books in stock. </h3>
     </div>
         <div align="center" class="content1">
         <table border="1" id="bookstore">
