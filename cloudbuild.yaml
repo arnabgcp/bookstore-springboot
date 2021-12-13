@@ -43,9 +43,8 @@ steps:
           NS=qa
           TARGET_ENV=qa 
 
-          echo ${VERSION}
 
-          sed -i 's|gcr.io/noted-extension-333310/addbook:.*|gcr.io/noted-extension-333310/addbook:$${VERSION}|' ./kubernetes/deployments/$${TARGET_ENV}/*.yaml
+          sed -i 's|gcr.io/noted-extension-333310/addbook:.*|gcr.io/noted-extension-333310/addbook:${VERSION}|' ./kubernetes/deployments/$${TARGET_ENV}/*.yaml
           
           kubectl get ns $${NS} || kubectl create ns $${NS}
           kubectl apply --namespace $${NS} -f kubernetes/deployments/$${TARGET_ENV}
