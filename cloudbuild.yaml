@@ -18,48 +18,35 @@ steps:
         docker push gcr.io/$PROJECT_ID/addbook:$${VERSION}
     id: publish
     entrypoint: bash
-
-  - name: gcr.io/cloud-builders/gcloud
+    
+  - id: 'deploy'
+    name: 'gcr.io/cloud-builders/gcloud'
     env:
       - 'CLOUDSDK_COMPUTE_ZONE=${_CLOUDSDK_COMPUTE_ZONE}'
       - 'CLOUDSDK_CONTAINER_CLUSTER=${_CLOUDSDK_CONTAINER_CLUSTER}'
-      - KUBECONFIG=/kube/config
+      - 'KUBECONFIG=/kube/config'
+    entrypoint: 'bash'
     args:
       - '-c'
-      - <
-              
-        CLUSTER=$$(gcloud config get-value container/cluster)
-        PROJECT=$$(gcloud config get-value core/project)
-        ZONE=$$(gcloud config get-value compute/zone)
+      - |
+          CLUSTER=$$(gcloud config get-value container/cluster)
+          PROJECT=$$(gcloud config get-value core/project)
+          ZONE=$$(gcloud config get-value compute/zone)
+          
+          [[ "$BRANCH_NAME" ]] && VERSION=${BRANCH_NAME}-${SHORT_SHA}
+          [[ "$TAG_NAME" ]] && VERSION=$TAG_NAME
+
+          gcloud container clusters get-credentials "$${CLUSTER}" \
+            --project "$${PROJECT}" \
+            --zone "$${ZONE}" 
+
+          NS=qa
+          TARGET_ENV=qa 
 
 
 
-        [[ "$BRANCH_NAME" ]] && VERSION=${BRANCH_NAME}-${SHORT_SHA}
-        [[ "$TAG_NAME" ]] && VERSION=$TAG_NAME
-
-
-
-        gcloud container clusters get-credentials "$${CLUSTER}" \
-          --project "$${PROJECT}" \
-          --zone "$${ZONE}"  
-
-
-        TARGET_ENV=qa
-
-
-        NS=qa
-
-
-        sed -i 's|gcr.io/$PROJECT_ID/addbook:.*|gcr.io/$PROJECT_ID/addbook:$${VERSION}|' ./kubernetes/deployments/$${TARGET_ENV}/*.yaml
-
-
-
-        kubectl get ns $${NS} || kubectl create ns $${NS}
-
-
-        kubectl apply --namespace $${NS} -f
-
-        kubernetes/deployments/$${TARGET_ENV}
-    id: deploy
-    entrypoint: bash
-
+          sed -i 's|gcr.io/$PROJECT_ID/helloworld:.*|gcr.io/$PROJECT_ID/helloworld:$${VERSION}|' ./kubernetes/deployments/$${TARGET_ENV}/*.yaml
+          
+          kubectl get ns $${NS} || kubectl create ns $${NS}
+          kubectl apply --namespace $${NS} --recursive -f kubernetes/deployments/$${TARGET_ENV}
+          kubectl apply --namespace $${NS} --recursive -f kubernetes/services
