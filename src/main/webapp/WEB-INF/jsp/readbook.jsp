@@ -40,7 +40,7 @@
 	
     <div align="center" class="content1">
         <table border="1" cellpadding="5" id="bookstore">
-            <caption> <h2>Below table will list the available books details </h2> </caption>
+            <caption> <h2>Below table will list the available stocks of books </h2> </caption>
             <tr>
                 <th>ID</th>
                 <th>Title</th>
