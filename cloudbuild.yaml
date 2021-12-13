@@ -26,7 +26,7 @@ steps:
       - KUBECONFIG=/kube/config
     args:
       - '-c'
-      - |
+      - <
               
         CLUSTER=$$(gcloud config get-value container/cluster)
         PROJECT=$$(gcloud config get-value core/project)
