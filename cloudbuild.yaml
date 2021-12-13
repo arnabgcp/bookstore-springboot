@@ -43,7 +43,7 @@ steps:
           NS=qa
           TARGET_ENV=qa 
 
-          echo $VERSION
+          echo ${VERSION}
 
           sed -i 's|gcr.io/noted-extension-333310/addbook:.*|gcr.io/noted-extension-333310/addbook:$${VERSION}|' ./kubernetes/deployments/$${TARGET_ENV}/*.yaml
           
