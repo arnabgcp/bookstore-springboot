@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bookstore-addbook
+  name: bookstore-lisbook
   labels:
     app: list-book
 spec:
