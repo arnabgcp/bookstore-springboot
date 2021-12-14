@@ -39,9 +39,8 @@
       <a href="/addnewbook"><li>Add New Book</li></a>
       <a href="/listallbooks"><li>List All Books</li></a>
       <a href="/showupdateform"><li>Update/Delete Books</li></a>
-      <a href="#"><li>Google Cloud Console</li></a>
-      <a href="#"><li>Report Issues</li></a>
       <a href="/"><li>Sign Out</li></a>
+      <a href="mailto:karthick.pakkiriswamy@cognizant.com;arnab.dutta4@cognizant.com"><li>Report Issues</li></a>
      </ul>
   </div>
 </nav>
