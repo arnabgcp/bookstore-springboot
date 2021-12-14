@@ -56,7 +56,7 @@
             </tr>
             <c:forEach var="book" items="${books}">
 		   <tr>
-                    <td align="center"><c:out value="${book.id}" /></td>
+                    <td align="center"><c:out value="${book.book_id}" /></td>
                     <td><c:out value="${book.title}" /></td>
                     <td><c:out value="${book.author}" /></td>
                     <td align="right"><c:out value="${book.price}" /></td>
