@@ -37,8 +37,7 @@
       <a href="list"><li>List All Books</li></a>
       <a href="showeditpage"><li>Update Books</li></a>
       <a href="delete"><li>Delete Books</li></a>
-      <a href="#"><li>Google Cloud Console</li></a>
-      <a href="#"><li>Report Issues</li></a>
+      <a href="mailto:karthick.pakkiriswamy@cognizant.com"><li>Report Issues</li></a>
       <a href="/"><li>Sign Out</li></a>
      </ul>
   </div>

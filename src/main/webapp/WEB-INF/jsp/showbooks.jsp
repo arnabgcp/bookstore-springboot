@@ -43,16 +43,12 @@
 </nav>
         
 <div class="content">
-<h3>Books Management Application Demo - Running on Google Kubernetes Engine</h3>
+Books Management Application Demo - Running on Google Kubernetes Engine
 </div>
 
  <div class="content2">
-                <h3>
-		Below table will list the available books details
-                </h3>
+                <h3> Below table will list the available books details </h3>
 </div>
-
-
 	<div align="center" class="content1">
         <table border="1" id="bookstore">
             <tr>
@@ -60,7 +56,6 @@
                 <th width=80>Title</th>
                 <th width=60>Author</th>
                 <th width=50>Price (USD)</th>
-                             
             </tr>
             <tbody>
             <c:forEach var="book" items="${books}">
