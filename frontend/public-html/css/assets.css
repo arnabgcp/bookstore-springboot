@@ -1,0 +1,1971 @@
+
+<!doctype html>
+<html lang="en" class="smooth">
+<head>
+  <meta charset="utf-8">
+  <title>AWS re:Invent | Amazon Web Services</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Join AWS re:Invent" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AWS re:Invent">
+  <meta name="twitter:description" content="Join the AWS Cloud Community">
+  <meta name="twitter:image" content="https://reinvent.awsevents.com/static/twitter/twitter.png">
+
+  <meta property="og:url" content="/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="AWS re:Invent" />
+  <meta property="og:description" content="Join the AWS Cloud Community" />
+  <meta property="og:image" content="https://reinvent.awsevents.com/static/facebook/facebook.png" />
+  <script type="text/javascript" src="https://d168etgz51k3pp.cloudfront.net/aws-mktg-vidyard-service.js"></script>
+  <script type="text/javascript" src="/assets/index.js"></script>
+  <script type="text/javascript" src="/assets/munchkin.js"></script>
+  <link rel="stylesheet" type="text/css" href="/assets/screen.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="home" class="site-content is-hidden" data-site-content>
+  
+
+<div class="C1PrimaryHero is-hidden" data-component="C1PrimaryHero">
+  
+  
+<div class="video-file">
+  <video class="video" muted loop autoplay>
+    <source src="/static/media/videos/reInvent2021_Motion_Web_Ambient_15s_1920x1080.mp4">
+  </video>
+</div>
+
+  
+  <div class="ripple-wrapper">
+    
+<picture class="picture" data-ripple-visual>
+  
+  <source
+    
+    srcset="/static/media/ripples/Primary_Hero_Tablet.png"
+    media="(min-width: 712px)"
+  >
+  
+  
+  	
+      <img src="/static/media/ripples/Primary_Hero_Mobile.jpg"  alt="decorative hero"  >
+      
+      
+  	
+  
+</picture>
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <div class="content-wrapper" data-fade-in>
+    <div class="copy-wrapper" data-fade-in>
+      <div class="logo-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" class="logo brand-logo" alt="re:Invent logo" viewBox="0 0 246 56">
+  <g class="logo-part-wrapper logo-aws">
+    <path d="M6.13.57L0 16.88h2.51L4 12.55h6.82l1.53 4.33h2.54L8.76.57zM7.4 2.74l2.8 8H4.62z" class="aws" />
+    <path d="M27.66 16.88L24.53 4.1l-3.16 12.78h-2.73L13.81.57h2.65l3.57 13.67 3.18-13.2h2.68l3.19 13.23L32.67.57h2.56l-4.84 16.31h-2.73z" class="aws" />
+    <path d="M40 9.14a6.84 6.84 0 01-2.9-1.77 3.88 3.88 0 01-.89-2.61 4.22 4.22 0 01.67-2.34A4.54 4.54 0 0138.81.81a7 7 0 013-.59 12.49 12.49 0 014.42.85V3a15.21 15.21 0 00-4.26-.73 4 4 0 00-2.4.63 2.06 2.06 0 00-.85 1.77 2 2 0 00.57 1.5 6.36 6.36 0 002.13 1.11l2.18.8a6.64 6.64 0 012.79 1.71 3.89 3.89 0 01.85 2.58 4.44 4.44 0 01-1.64 3.6 6.8 6.8 0 01-4.42 1.34 10.93 10.93 0 01-4.78-1v-1.88a15.16 15.16 0 004.74.82 4.29 4.29 0 002.66-.73 2.32 2.32 0 001-2 2 2 0 00-.56-1.45A5.39 5.39 0 0042.27 10z" class="aws"/>
+  </g>
+  <g class="logo-part-wrapper logo-re">
+    <path d="M1 54.12V28.25h2.6L3.92 32a13 13 0 013.89-3 10 10 0 014.32-.9 18.51 18.51 0 012.14.15v2.63c-.91-.07-1.72-.11-2.46-.11a9.8 9.8 0 00-4.26.88A11.12 11.12 0 004 34.43v19.69z" />
+    <path d="M28 30.11q-8.26 0-8.74 9.2h15.9c0-.48.06-1.05.06-1.7A7.79 7.79 0 0033.35 32 7.14 7.14 0 0028 30.11zm-8.78 11.57q.06 5.39 2.41 8t7.27 2.57a21.36 21.36 0 008.63-1.8v2.41a18 18 0 01-8.84 2.06q-6.23 0-9.36-3.47t-3.14-10.34q0-6.48 3.16-10t8.87-3.58c3.17 0 5.6.9 7.3 2.68s2.53 4.33 2.53 7.66a19.85 19.85 0 01-.31 3.86z" />
+  </g>
+  <g class="logo-part-wrapper logo-colon">
+    <path d="M45 54.43a2.31 2.31 0 01-1.7-.67 2.36 2.36 0 01-.65-1.7 2.43 2.43 0 01.65-1.75 2.31 2.31 0 011.7-.66 2.27 2.27 0 011.7.66 2.39 2.39 0 01.66 1.75 2.32 2.32 0 01-.66 1.7 2.28 2.28 0 01-1.7.67m0-21.7a2.28 2.28 0 01-1.7-.67 2.36 2.36 0 01-.65-1.7 2.43 2.43 0 01.65-1.75A2.31 2.31 0 0145 28a2.27 2.27 0 011.7.66 2.39 2.39 0 01.66 1.75 2.32 2.32 0 01-.66 1.7 2.24 2.24 0 01-1.7.67" class="cls-2"/>
+  </g>
+  <g class="logo-part-wrapper logo-invent">
+    <path d="M60.55 54.12h4.64V.47h-4.64v53.65z" />
+    <path d="M102.75 54.12V27.64q0-5-2-7.31C99.47 18.8 97.36 18 94.48 18a27.46 27.46 0 00-15.36 5v31.12h-4.49V15.18h3.94l.43 4.49a32.71 32.71 0 018.11-4.18A25.3 25.3 0 0195.42 14q5.74 0 8.78 3c2 2 3 4.91 3 8.78v28.34z" />
+    <path d="M125.52 54.12l-15.99-38.94h4.89l13.54 34.37 13.55-34.37h4.72l-15.98 38.94h-4.73z" />
+    <path d="M164 18q-12.44 0-13.15 13.86h23.95c0-.72.08-1.57.08-2.55q0-5.58-2.76-8.44T164 18zm-13.14 17.38q.07 8.13 3.62 12c2.37 2.59 6 3.87 11 3.87a32.28 32.28 0 0013-2.7v3.63a27 27 0 01-13.31 3.1q-9.36 0-14.09-5.23t-4.73-15.52q0-9.75 4.77-15.13t13.29-5.4q7.16 0 11 4t3.82 11.54a30.13 30.13 0 01-.47 5.8z" />
+    <path d="M213.28 54.12V27.64q0-5-2-7.31T205 18a27.46 27.46 0 00-15.36 5v31.12h-4.49V15.18h3.94l.47 4.49a32.54 32.54 0 018.11-4.18A25.3 25.3 0 01206 14q5.75 0 8.78 3t3 8.78v28.34z" />
+    <path d="M246 53.27a21.62 21.62 0 01-8 1.31q-4.65 0-7.09-2.43c-1.62-1.63-2.44-4-2.44-7.09v-26h-7.4V16l7.56-.7.63-11.38H233v11.26h12.6v3.87H233v25.78c0 2.12.46 3.61 1.38 4.49s2.45 1.32 4.61 1.32a29.41 29.41 0 007-.93z" />
+  </g>
+</svg>
+
+        <div data-transition-item>
+          <span class="copy eyebrow monotone mobile">NOV. 29 &ndash; DEC. 3, 2021<br>Las Vegas, NV</span>
+          <span class="copy eyebrow monotone full">NOV. 29 &ndash; DEC. 3, 2021  |  Las Vegas, NV</span>
+        </div>
+      </div>
+      <div class="price-wrapper" data-transition-item>
+  <span class="copy eyebrow monotone">
+     Celebrating 10 years of re:Invent
+  </span>
+</div>
+
+      
+        <div class="dual">
+        <a href="/register/" class="cta-pill trkButton" title="Register now"   data-transition-item  data-cta><span class="copy">Register now</span></a>
+
+        <a href="https://virtual.reinvent.awsevents.com/" class="cta-outline trkButton" title="Virtual log in"   data-transition-item  target="_blank" rel="noopener noreferrer"  data-cta><span class="copy button">Virtual log in</span></a>
+
+        </div>
+      
+    </div>
+    
+    
+<div class="UpdatesCarousel updates-wrapper" data-component="UpdatesCarousel"  data-transition-item>
+  <div class="carousel-controls-wrapper">
+    <button class="chevron-button previous"  data-carousel-button="previous" role=”button”>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+    <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+  </svg>
+</button>
+
+    <button class="chevron-button next"  data-carousel-button="next" role=”button”>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+    <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+  </svg>
+</button>
+
+  </div>
+  <ul class="updates-list" data-carousel-list>
+    
+    <li class="update" data-carousel-item>
+      <div class="eyebrow">
+  VIRTUAL
+</div>
+
+
+      <h3 class="heading heading-4" >
+	Join us for Partner Solutions Day
+</h3>
+
+      <p class="content copy body">
+        Make Partner Solutions Day on Monday, Dec. 6 the next step in your re:Invent journey. Watch 70+ Partner Theater demos, new partner breakout sessions, and claim virtual swag.
+
+      </p>
+      <a href="https://virtual.reinvent.awsevents.com/partner-homepage/" class="cta-link cta-copy trkButton" title="Join now"   target="_blank" rel="noopener noreferrer"  data-cta><span class="copy">Join now</span><div class="underline"></div></a>
+
+    </li>
+    
+    <li class="update" data-carousel-item>
+      <div class="eyebrow">
+  REINVENT 2021
+</div>
+
+
+      <h3 class="heading heading-4" >
+	Missed any of the sessions?
+</h3>
+
+      <p class="content copy body">
+        Watch keynotes, leadership sessions, and hundreds of breakout sessions on demand. Register now to get free virtual access.
+
+      </p>
+      <a href="https://virtual.reinvent.awsevents.com/" class="cta-link cta-copy trkButton" title="Watch on demand&nbsp;content"   target="_blank" rel="noopener noreferrer"  data-cta><span class="copy">Watch on demand&nbsp;content</span><div class="underline"></div></a>
+
+    </li>
+    
+    <li class="update" data-carousel-item>
+      <div class="eyebrow">
+  VIRTUAL
+</div>
+
+
+      <h3 class="heading heading-4" >
+	Day one content available&nbsp;now
+</h3>
+
+      <p class="content copy body">
+        Watch content from Monday, Nov. 29 at re:Invent 2021 on demand. Log in or register for virtual&nbsp;access.
+
+      </p>
+      <a href="http://virtual.reinvent.awsevents.com/" class="cta-link cta-copy trkButton" title="Watch now"   target="_blank" rel="noopener noreferrer"  data-cta><span class="copy">Watch now</span><div class="underline"></div></a>
+
+    </li>
+    
+    <li class="update" data-carousel-item>
+      <div class="eyebrow">
+  LIVE FROM LAS VEGAS
+</div>
+
+
+      <h3 class="heading heading-4" >
+	Welcome to re:Invent 2021
+</h3>
+
+      <p class="content copy body">
+        re:Invent 2021 is here! Register now to get free access to keynotes, leadership sessions, and much&nbsp;more. 
+
+      </p>
+      <a href="/register/" class="cta-link cta-copy trkButton" title="Register for virtual&nbsp;re:Invent"    data-cta><span class="copy">Register for virtual&nbsp;re:Invent</span><div class="underline"></div></a>
+
+    </li>
+    
+    <li class="update" data-carousel-item>
+      <div class="eyebrow">
+  UPDATE
+</div>
+
+
+      <h3 class="heading heading-4" >
+	In-person re:Invent 2021 is sold&nbsp;out
+</h3>
+
+      <p class="content copy body">
+        Tickets for in-person re:Invent 2021 are now sold out. Register for virtual re:Invent to watch keynotes, leadership sessions, and breakout sessions for&nbsp;free. 
+
+      </p>
+      <a href="/register/" class="cta-link cta-copy trkButton" title="Register for virtual&nbsp;re:Invent"    data-cta><span class="copy">Register for virtual&nbsp;re:Invent</span><div class="underline"></div></a>
+
+    </li>
+    
+    <li class="update" data-carousel-item>
+      <div class="eyebrow">
+  Reserved Seating
+</div>
+
+
+      <h3 class="heading heading-4" >
+	Save your spot at the hottest&nbsp;sessions
+</h3>
+
+      <p class="content copy body">
+        Reserved seating is now open for registered attendees. Log in to the attendee portal and reserve your seat at your favorite&nbsp;sessions. 
+
+      </p>
+      <a href="https://portal.awsevents.com/events/reInvent2021/dashboard" class="cta-link cta-copy " title="Log in"   target="_blank" rel="noopener noreferrer"  data-cta><span class="copy">Log in</span><div class="underline"></div></a>
+
+    </li>
+    
+    <li class="update" data-carousel-item>
+      <div class="eyebrow">
+  HEALTH MEASURES
+</div>
+
+
+      <h3 class="heading heading-4" >
+	Learn about health measures at&nbsp;re:Invent
+</h3>
+
+      <p class="content copy body">
+        Review our updated COVID-19 vaccination requirements for attending re:Invent in Las&nbsp;Vegas.  
+
+      </p>
+      <a href="/health-measures/" class="cta-link cta-copy trkButton" title="Learn more"    data-cta><span class="copy">Learn more</span><div class="underline"></div></a>
+
+    </li>
+    
+  </ul>
+  
+
+<ol class="bullets" data-carousel-bullets>
+  
+  <li class="bullet" data-bullet></li>
+  
+  <li class="bullet" data-bullet></li>
+  
+  <li class="bullet" data-bullet></li>
+  
+  <li class="bullet" data-bullet></li>
+  
+  <li class="bullet" data-bullet></li>
+  
+  <li class="bullet" data-bullet></li>
+  
+  <li class="bullet" data-bullet></li>
+  
+</ol>
+
+</div>
+
+    
+  </div>
+</div>
+
+
+  
+<span data-reveal-trigger></span>
+<header class="C13Navigation is-hidden" data-component="C13Navigation">
+  <span class="background-overlay" data-background-overlay></span>
+  <div class="menu-bar-wrapper">
+    <span class="menu-bar-background-overlay" data-menu-background-overlay></span>
+    <div class="menu-bar" data-menu-bar>
+      <div class="menu-background-overlay" data-menu-background></div>
+      <button class="menu-button" data-menu-button role=”button”>
+  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 27">
+    <rect class="bar" y="6" width="29" height="1" />
+    <rect class="bar" y="13" width="29" height="1" />
+    <rect class="bar" y="20" width="20" height="1" />
+    <path class="cross" d="M4.246 3.957l.707-.707 19.799 19.799-.707.707z"/>
+    <path class="cross" d="M4.246 23.049l19.799-19.8.707.708L4.953 23.756z"/>
+  </svg>
+</button>
+
+
+      <div class="logo-wrapper">
+        <a href="/" class="link trkButton" title="AWS re:Invent Home"><svg xmlns="http://www.w3.org/2000/svg" class="logo brand-logo" alt="re:Invent logo" viewBox="0 0 246 56">
+  <g class="logo-part-wrapper logo-aws">
+    <path d="M6.13.57L0 16.88h2.51L4 12.55h6.82l1.53 4.33h2.54L8.76.57zM7.4 2.74l2.8 8H4.62z" class="aws" />
+    <path d="M27.66 16.88L24.53 4.1l-3.16 12.78h-2.73L13.81.57h2.65l3.57 13.67 3.18-13.2h2.68l3.19 13.23L32.67.57h2.56l-4.84 16.31h-2.73z" class="aws" />
+    <path d="M40 9.14a6.84 6.84 0 01-2.9-1.77 3.88 3.88 0 01-.89-2.61 4.22 4.22 0 01.67-2.34A4.54 4.54 0 0138.81.81a7 7 0 013-.59 12.49 12.49 0 014.42.85V3a15.21 15.21 0 00-4.26-.73 4 4 0 00-2.4.63 2.06 2.06 0 00-.85 1.77 2 2 0 00.57 1.5 6.36 6.36 0 002.13 1.11l2.18.8a6.64 6.64 0 012.79 1.71 3.89 3.89 0 01.85 2.58 4.44 4.44 0 01-1.64 3.6 6.8 6.8 0 01-4.42 1.34 10.93 10.93 0 01-4.78-1v-1.88a15.16 15.16 0 004.74.82 4.29 4.29 0 002.66-.73 2.32 2.32 0 001-2 2 2 0 00-.56-1.45A5.39 5.39 0 0042.27 10z" class="aws"/>
+  </g>
+  <g class="logo-part-wrapper logo-re">
+    <path d="M1 54.12V28.25h2.6L3.92 32a13 13 0 013.89-3 10 10 0 014.32-.9 18.51 18.51 0 012.14.15v2.63c-.91-.07-1.72-.11-2.46-.11a9.8 9.8 0 00-4.26.88A11.12 11.12 0 004 34.43v19.69z" />
+    <path d="M28 30.11q-8.26 0-8.74 9.2h15.9c0-.48.06-1.05.06-1.7A7.79 7.79 0 0033.35 32 7.14 7.14 0 0028 30.11zm-8.78 11.57q.06 5.39 2.41 8t7.27 2.57a21.36 21.36 0 008.63-1.8v2.41a18 18 0 01-8.84 2.06q-6.23 0-9.36-3.47t-3.14-10.34q0-6.48 3.16-10t8.87-3.58c3.17 0 5.6.9 7.3 2.68s2.53 4.33 2.53 7.66a19.85 19.85 0 01-.31 3.86z" />
+  </g>
+  <g class="logo-part-wrapper logo-colon">
+    <path d="M45 54.43a2.31 2.31 0 01-1.7-.67 2.36 2.36 0 01-.65-1.7 2.43 2.43 0 01.65-1.75 2.31 2.31 0 011.7-.66 2.27 2.27 0 011.7.66 2.39 2.39 0 01.66 1.75 2.32 2.32 0 01-.66 1.7 2.28 2.28 0 01-1.7.67m0-21.7a2.28 2.28 0 01-1.7-.67 2.36 2.36 0 01-.65-1.7 2.43 2.43 0 01.65-1.75A2.31 2.31 0 0145 28a2.27 2.27 0 011.7.66 2.39 2.39 0 01.66 1.75 2.32 2.32 0 01-.66 1.7 2.24 2.24 0 01-1.7.67" class="cls-2"/>
+  </g>
+  <g class="logo-part-wrapper logo-invent">
+    <path d="M60.55 54.12h4.64V.47h-4.64v53.65z" />
+    <path d="M102.75 54.12V27.64q0-5-2-7.31C99.47 18.8 97.36 18 94.48 18a27.46 27.46 0 00-15.36 5v31.12h-4.49V15.18h3.94l.43 4.49a32.71 32.71 0 018.11-4.18A25.3 25.3 0 0195.42 14q5.74 0 8.78 3c2 2 3 4.91 3 8.78v28.34z" />
+    <path d="M125.52 54.12l-15.99-38.94h4.89l13.54 34.37 13.55-34.37h4.72l-15.98 38.94h-4.73z" />
+    <path d="M164 18q-12.44 0-13.15 13.86h23.95c0-.72.08-1.57.08-2.55q0-5.58-2.76-8.44T164 18zm-13.14 17.38q.07 8.13 3.62 12c2.37 2.59 6 3.87 11 3.87a32.28 32.28 0 0013-2.7v3.63a27 27 0 01-13.31 3.1q-9.36 0-14.09-5.23t-4.73-15.52q0-9.75 4.77-15.13t13.29-5.4q7.16 0 11 4t3.82 11.54a30.13 30.13 0 01-.47 5.8z" />
+    <path d="M213.28 54.12V27.64q0-5-2-7.31T205 18a27.46 27.46 0 00-15.36 5v31.12h-4.49V15.18h3.94l.47 4.49a32.54 32.54 0 018.11-4.18A25.3 25.3 0 01206 14q5.75 0 8.78 3t3 8.78v28.34z" />
+    <path d="M246 53.27a21.62 21.62 0 01-8 1.31q-4.65 0-7.09-2.43c-1.62-1.63-2.44-4-2.44-7.09v-26h-7.4V16l7.56-.7.63-11.38H233v11.26h12.6v3.87H233v25.78c0 2.12.46 3.61 1.38 4.49s2.45 1.32 4.61 1.32a29.41 29.41 0 007-.93z" />
+  </g>
+</svg>
+</a>
+      </div>
+    </div>
+    
+    <div class="register-button-wrapper" data-register-wrapper>
+      <a href="/register/" class="cta-pill trkButton" title="Register now"   data-register-button  data-cta><span class="copy">Register now</span></a>
+
+      <a href="https://virtual.reinvent.awsevents.com/" class="cta-outline trkButton" title="Virtual log in"   data-login-button  target="_blank" rel="noopener noreferrer"  data-cta><span class="copy button">Virtual log in</span></a>
+
+    </div>
+    
+  </div>
+  <div class="navigation-wrapper">
+    <nav class="navigation-overview" role="navigation" aria-label="Main" data-navigation-overview>
+      <div class="navigation-column-wrapper">
+        
+        <div class="column" data-navigation-column>
+          
+            
+
+<div class="navigation-link" data-navigation-link>
+  <div class="navigation-header">
+    <a href="/agenda/" class="cta-link cta-copy trkButton" title="Agenda"    data-cta><span class="copy">Agenda</span><div class="underline"></div></a>
+
+    
+  </div>
+  
+</div>
+
+
+          
+            
+
+<div class="navigation-link" data-navigation-link>
+  <div class="navigation-header">
+    <a href="/keynotes/" class="cta-link cta-copy trkButton" title="Keynotes"    data-cta><span class="copy">Keynotes</span><div class="underline"></div></a>
+
+    
+  </div>
+  
+</div>
+
+
+          
+            
+
+<div class="navigation-link" data-navigation-link>
+  <div class="navigation-header">
+    <a href="/leadership-sessions/" class="cta-link cta-copy trkButton" title="Leadership sessions"    data-cta><span class="copy">Leadership sessions</span><div class="underline"></div></a>
+
+    
+  </div>
+  
+</div>
+
+
+          
+            
+
+<div class="navigation-link" data-navigation-link>
+  <div class="navigation-header">
+    <a href="/global-partner-summit/" class="cta-link cta-copy trkButton" title="Global Partner Summit"    data-cta><span class="copy">Global Partner Summit</span><div class="underline"></div></a>
+
+    
+  </div>
+  
+</div>
+
+
+          
+            
+
+<div class="navigation-link" data-navigation-link>
+  <div class="navigation-header">
+    <a href="/campus/" class="cta-link cta-copy trkButton" title="Campus"    data-cta><span class="copy">Campus</span><div class="underline"></div></a>
+
+    
+      <div class="chevron" data-chevron>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+          <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+        </svg>
+      </div>
+    
+  </div>
+  
+    <div class="sub-navigation-link-wrapper" data-sub-navigation>
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/health-measures/" class="link copy body trkButton" title="Health measures">Health measures</a>
+</div>
+
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/campus/transportation/" class="link copy body trkButton" title="Transportation">Transportation</a>
+</div>
+
+      
+    </div>
+  
+</div>
+
+
+          
+            
+
+<div class="navigation-link" data-navigation-link>
+  <div class="navigation-header">
+    <a href="/mobile/" class="cta-link cta-copy trkButton" title="Mobile App"    data-cta><span class="copy">Mobile App</span><div class="underline"></div></a>
+
+    
+  </div>
+  
+</div>
+
+
+          
+            
+
+<div class="navigation-link" data-navigation-link>
+  <div class="navigation-header">
+    <a href="/sponsors/" class="cta-link cta-copy trkButton" title="Sponsors"    data-cta><span class="copy">Sponsors</span><div class="underline"></div></a>
+
+    
+      <div class="chevron" data-chevron>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+          <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+        </svg>
+      </div>
+    
+  </div>
+  
+    <div class="sub-navigation-link-wrapper" data-sub-navigation>
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/sponsors/partner-solutions-day/" class="link copy body trkButton" title="Partner Solutions Day">Partner Solutions Day</a>
+</div>
+
+      
+    </div>
+  
+</div>
+
+
+          
+            
+
+<div class="navigation-link" data-navigation-link>
+  <div class="navigation-header">
+    <a href="/faqs/" class="cta-link cta-copy trkButton" title="FAQs"    data-cta><span class="copy">FAQs</span><div class="underline"></div></a>
+
+    
+  </div>
+  
+</div>
+
+
+          
+        </div>
+        
+        <div class="column" data-navigation-column>
+          
+            
+
+<div class="navigation-link" data-navigation-link>
+  <div class="navigation-header">
+    <a href="/learn/" class="cta-link cta-copy trkButton" title="Learn"    data-cta><span class="copy">Learn</span><div class="underline"></div></a>
+
+    
+      <div class="chevron" data-chevron>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+          <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+        </svg>
+      </div>
+    
+  </div>
+  
+    <div class="sub-navigation-link-wrapper" data-sub-navigation>
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/learn/bug-bust/" class="link copy body trkButton" title="AWS BugBust">AWS BugBust</a>
+</div>
+
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/learn/aws-deepracer/" class="link copy body trkButton" title="AWS DeepRacer">AWS DeepRacer</a>
+</div>
+
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/learn/breakout-content/" class="link copy body trkButton" title="Breakout content">Breakout content</a>
+</div>
+
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/learn/expo/" class="link copy body trkButton" title="Expo">Expo</a>
+</div>
+
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/learn/jams-and-gamedays/" class="link copy body trkButton" title="Jams and GameDays">Jams and GameDays</a>
+</div>
+
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/learn/lounges/" class="link copy body trkButton" title="Lounges">Lounges</a>
+</div>
+
+      
+    </div>
+  
+</div>
+
+
+          
+            
+
+<div class="navigation-link" data-navigation-link>
+  <div class="navigation-header">
+    <a href="/training-and-certification/" class="cta-link cta-copy trkButton" title="AWS&nbsp;Training&nbsp;and&nbsp;Certification"    data-cta><span class="copy">AWS&nbsp;Training&nbsp;and&nbsp;Certification</span><div class="underline"></div></a>
+
+    
+      <div class="chevron" data-chevron>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+          <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+        </svg>
+      </div>
+    
+  </div>
+  
+    <div class="sub-navigation-link-wrapper" data-sub-navigation>
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/training-and-certification/awscertification" class="link copy body trkButton" title="AWS Certifications">AWS Certifications</a>
+</div>
+
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/training-and-certification/bootcamps" class="link copy body trkButton" title="Bootcamps">Bootcamps</a>
+</div>
+
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/training-and-certification/labs" class="link copy body trkButton" title="Labs">Labs</a>
+</div>
+
+      
+    </div>
+  
+</div>
+
+
+          
+        </div>
+        
+        <div class="column" data-navigation-column>
+          
+            
+
+<div class="navigation-link" data-navigation-link>
+  <div class="navigation-header">
+    <a href="/how-to-reinvent/" class="cta-link cta-copy trkButton" title="How to re:Invent"    data-cta><span class="copy">How to re:Invent</span><div class="underline"></div></a>
+
+    
+      <div class="chevron" data-chevron>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+          <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+        </svg>
+      </div>
+    
+  </div>
+  
+    <div class="sub-navigation-link-wrapper" data-sub-navigation>
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/how-to-reinvent/attendee-guides/" class="link copy body trkButton" title="Attendee guides">Attendee guides</a>
+</div>
+
+      
+    </div>
+  
+</div>
+
+
+          
+            
+
+<div class="navigation-link" data-navigation-link>
+  <div class="navigation-header">
+    <a href="/play/" class="cta-link cta-copy trkButton" title="Play"    data-cta><span class="copy">Play</span><div class="underline"></div></a>
+
+    
+      <div class="chevron" data-chevron>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+          <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+        </svg>
+      </div>
+    
+  </div>
+  
+    <div class="sub-navigation-link-wrapper" data-sub-navigation>
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/play/restaurant-receptions/" class="link copy body trkButton" title="Restaurant Receptions">Restaurant receptions</a>
+</div>
+
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/play/quirky" class="link copy body trkButton" title="Quirky">Quirky</a>
+</div>
+
+      
+    </div>
+  
+</div>
+
+
+          
+            
+
+<div class="navigation-link" data-navigation-link>
+  <div class="navigation-header">
+    <a href="/community/" class="cta-link cta-copy trkButton" title="Community"    data-cta><span class="copy">Community</span><div class="underline"></div></a>
+
+    
+      <div class="chevron" data-chevron>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+          <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+        </svg>
+      </div>
+    
+  </div>
+  
+    <div class="sub-navigation-link-wrapper" data-sub-navigation>
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/community/all-builders-welcome/" class="link copy body trkButton" title="All Builders Welcome">All Builders Welcome</a>
+</div>
+
+      
+      
+
+<div class="sub-navigation-link">
+  <a href="/community/startups/" class="link copy body trkButton" title="Startups">Startups</a>
+</div>
+
+      
+    </div>
+  
+</div>
+
+
+          
+            
+
+<div class="navigation-link" data-navigation-link>
+  <div class="navigation-header">
+    <a href="/sustainability/" class="cta-link cta-copy trkButton" title="Sustainability"    data-cta><span class="copy">Sustainability</span><div class="underline"></div></a>
+
+    
+  </div>
+  
+</div>
+
+
+          
+            
+
+<div class="navigation-link" data-navigation-link>
+  <div class="navigation-header">
+    <a href="/giveback/" class="cta-link cta-copy trkButton" title="Give back"    data-cta><span class="copy">Give back</span><div class="underline"></div></a>
+
+    
+  </div>
+  
+</div>
+
+
+          
+        </div>
+        
+      </div>
+    </nav>
+    <div class="catalogue-wrapper" data-catalogue-wrapper>
+      <div class="content">
+        <h3 class="heading heading-3" >
+	Attendee portal
+</h3>
+
+        <p class="copy body">Log in to the attendee portal to plan your time onsite in Las&nbsp;Vegas.</p>
+        <a href="https://portal.awsevents.com/events/reInvent2021/dashboard" class="cta-outline trkButton" title="Attendee portal"    target="_blank" rel="noopener noreferrer"  data-cta><span class="copy button">Attendee portal</span></a>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+  
+
+<div class="C32FeaturedVideo" >
+  <div class="content-wrapper">
+    <div class="carousel-wrapper">
+      <div class="carousel-content" data-fade-in>
+        <div class="carousel-head" data-transition-item>
+          <div class="eyebrow" data-eyebrow>
+  Keynotes & Leadership Sessions
+</div>
+
+          <h2 class="heading heading-1 title" >
+	<strong>Hear the latest</strong> and be&nbsp;inspired
+</h2>
+
+        </div>
+        <div class="carousel" data-transition-item data-fade-in>
+          
+
+<div class="double-card-carousel" data-component="DoubleCardCarousel">
+  
+<div class="carousel-controls carousel-controls-wrapper">
+  <button class="chevron-button previous carousel-button"  data-carousel-button="previous" role=”button”>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+    <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+  </svg>
+</button>
+
+  <button class="chevron-button next carousel-button"  data-carousel-button="next" role=”button”>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+    <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+  </svg>
+</button>
+
+</div>
+
+  <div class="mask-wrapper">
+    <ul class="carousel-list" data-carousel-list>
+      
+      <li class="carousel-item" data-carousel-item>
+        <div class="visual-wrapper">
+          
+<picture class="picture">
+  
+  
+  	
+      <img src="/static/media/cards/home/reInvent2021_Website_Keynotes_Adam-Selipsky_C32_Card.png"  alt="Adam Selipsky headshot by Katie Simmons Photography"  >
+      
+      
+  	
+  
+</picture>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="carousel-item-content">
+          <h3 class="heading heading-4 title" >
+	Keynotes
+</h3>
+
+          <p class="item-copy copy body">Hear the latest from AWS at re:Invent. Be the first to learn about new product launches and hear from customers. Live from Las Vegas and&nbsp;online.</p>
+          <a href="/keynotes/" class="cta-link cta-copy trkButton" title="Learn more"    data-cta><span class="copy">Learn more</span><div class="underline"></div></a>
+
+        </div>
+      </li>
+      
+      <li class="carousel-item" data-carousel-item>
+        <div class="visual-wrapper">
+          
+<picture class="picture">
+  
+  
+  	
+      <img src="/static/media/home/reInvent21_Leadership_Mai_Lan_Bukovec_1.png"  alt="Mai Lan Bukovec presenting"  >
+      
+      
+  	
+  
+</picture>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="carousel-item-content">
+          <h3 class="heading heading-4 title" >
+	Leadership sessions
+</h3>
+
+          <p class="item-copy copy body">Join executive-level AWS leaders live from Las Vegas or virtually, as they share the latest advances in AWS technologies and set the future product&nbsp;direction.</p>
+          <a href="/leadership-sessions/" class="cta-link cta-copy trkButton" title="Learn more"    data-cta><span class="copy">Learn more</span><div class="underline"></div></a>
+
+        </div>
+      </li>
+      
+      <li class="carousel-item" data-carousel-item>
+        <div class="visual-wrapper">
+          
+<picture class="picture">
+  
+  
+  	
+      <img src="/static/media/home/Web540x345.png"  alt="Doug Yeum, Sandy Carter, and Stephen Orban headshots"  >
+      
+      
+  	
+  
+</picture>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="carousel-item-content">
+          <h3 class="heading heading-4 title" >
+	Global Partner Summit
+</h3>
+
+          <p class="item-copy copy body">Join us for the Global Partner Summit, which provides AWS Partners with opportunities to connect, collaborate, and discover new&nbsp;possibilities.</p>
+          <a href="/global-partner-summit/" class="cta-link cta-copy trkButton" title="Learn more"    data-cta><span class="copy">Learn more</span><div class="underline"></div></a>
+
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+<ol class="bullets" data-carousel-bullets>
+  
+  <li class="bullet" data-bullet></li>
+  
+  <li class="bullet" data-bullet></li>
+  
+  <li class="bullet" data-bullet></li>
+  
+</ol>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="featured-video" data-fade-in>
+      <div class="content">
+        <div class="featured-video-titles" data-transition-item>
+          <div class="eyebrow" data-eyebrow>
+  HOW TO RE:INVENT
+</div>
+
+          <h2 class="heading heading-2 title" >
+	Discover the all-new <strong>virtual re:Invent</strong>
+</h2>
+
+        </div>
+        <div class="video-container" data-transition-item>
+          <div class="video-player"></div>
+          <div class="video-poster-wrapper">
+            <picture class="picture">
+              <img  
+                class='vidyard-player-embed' 
+                src='https://play.vidyard.com/3ZtVBxoYVB7qUGcYB9dXjz.jpg' 
+                data-uuid= 3ZtVBxoYVB7qUGcYB9dXjz 
+                data-v='4' 
+                data-type='lightbox' />
+            </picture>
+          </div>
+        </div>
+        <a href="/how-to-reinvent/" class="cta-outline " title="Learn more"    data-cta><span class="copy button">Learn more</span></a>
+
+      </div>
+      
+
+      
+
+    </div>
+    <!--<div class="checker-wrapper" data-checker>
+          
+
+
+
+
+
+
+
+
+
+        </div>-->
+  </div>
+</div>
+
+
+
+  
+
+<div  class="C25News" data-component="C25News">
+  <div class="content-wrapper">
+    <div class="content">
+      <div data-fade-in>
+        <div class="eyebrow" data-eyebrow>
+  
+</div>
+ 
+        
+          <h1 class="heading heading-1 title" >
+	<strong>Come build</strong> with&nbsp;us
+</h1>
+
+        
+        <p class="copy heading heading-5">Join us in Las Vegas and online to learn and build. We have many learning opportunities that cover all interests and experience&nbsp;levels. 
+</p>
+      </div>
+    </div>
+
+    <div class="news-carousel-wrapper">
+      <div class="news-carousel-content">
+        <div class="news-carousel-head" data-fade-in>
+          <div class="eyebrow">
+  Learn
+</div>
+
+          <h1 class="heading heading-1 title" >
+	<strong>Discover more</strong> ways to learn
+</h1>
+
+        </div>
+
+        <div class="news-carousel" data-fade-in>
+          
+
+<div class="double-card-carousel" data-component="DoubleCardCarousel">
+  
+<div class="carousel-controls carousel-controls-wrapper high-contrast">
+  <button class="chevron-button previous carousel-button"  data-carousel-button="previous" role=”button”>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+    <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+  </svg>
+</button>
+
+  <button class="chevron-button next carousel-button"  data-carousel-button="next" role=”button”>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+    <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+  </svg>
+</button>
+
+</div>
+
+  <div class="mask-wrapper">
+    <ul class="carousel-list" data-carousel-list>
+      
+      <li class="carousel-item" data-carousel-item>
+        <div class="visual-wrapper">
+          
+<picture class="picture">
+  
+  
+  	
+      <img src="/static/media/cards/learn/reInvent19_1202_venetian_126.jpg"  alt="A woman presenting at re:Invent 2019"  >
+      
+      
+  	
+  
+</picture>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="carousel-item-content">
+          <h1 class="heading heading-4 title" >
+	Breakout content
+</h1>
+
+          <p class="item-copy copy body">From interactive small-group chalk talks to lecture-style breakout sessions, choose the learning methods that work for&nbsp;you.
+</p>
+          <a href="/learn/breakout-content/" class="cta-link cta-copy trkButton" title="Learn more"    data-cta><span class="copy">Learn more</span><div class="underline"></div></a>
+
+        </div>
+      </li>
+      
+      <li class="carousel-item" data-carousel-item>
+        <div class="visual-wrapper">
+          
+<picture class="picture">
+  
+  
+  	
+      <img src="/static/media/home/reInvent19_1202_venetian_155.jpg"  alt="A man pointing at a screen at a training center"  >
+      
+      
+  	
+  
+</picture>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="carousel-item-content">
+          <h1 class="heading heading-4 title" >
+	AWS Training and Certification
+</h1>
+
+          <p class="item-copy copy body">Get equipped with the knowledge it takes to move your company&mdash;and&nbsp;career&mdash;forward. 
+</p>
+          <a href="/training-and-certification/" class="cta-link cta-copy trkButton" title="Learn more"    data-cta><span class="copy">Learn more</span><div class="underline"></div></a>
+
+        </div>
+      </li>
+      
+      <li class="carousel-item" data-carousel-item>
+        <div class="visual-wrapper">
+          
+<picture class="picture">
+  
+  
+  	
+      <img src="/static/media/cards/learn/reInvent19_1205_venetian_DrWernerVogelsKeynote_32.jpg"  alt="The 2019 AWS DeepRacer Cup Sola and Dr Matt Wood holding the AWS DeepRacer chamionship cup"  >
+      
+      
+  	
+  
+</picture>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="carousel-item-content">
+          <h1 class="heading heading-4 title" >
+	AWS DeepRacer
+</h1>
+
+          <p class="item-copy copy body">It’s the fastest way to get rolling with machine learning. Developers, start your engines at re:Invent&nbsp;2021! 
+</p>
+          <a href="/learn/aws-deepracer/" class="cta-link cta-copy trkButton" title="Learn more"    data-cta><span class="copy">Learn more</span><div class="underline"></div></a>
+
+        </div>
+      </li>
+      
+      <li class="carousel-item" data-carousel-item>
+        <div class="visual-wrapper">
+          
+<picture class="picture">
+  
+  
+  	
+      <img src="/static/media/cards/learn/reInvent19_1204_venetian_expo_43.jpg"  alt="An attendee and an AWS associate smiling looking at a laptop screen"  >
+      
+      
+  	
+  
+</picture>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="carousel-item-content">
+          <h1 class="heading heading-4 title" >
+	Expo
+</h1>
+
+          <p class="item-copy copy body">Join us in the Expo to network, talk to AWS experts, attend sessions, and see the latest&nbsp;demos.
+</p>
+          <a href="/learn/expo/" class="cta-link cta-copy trkButton" title="Learn more"    data-cta><span class="copy">Learn more</span><div class="underline"></div></a>
+
+        </div>
+      </li>
+      
+      <li class="carousel-item" data-carousel-item>
+        <div class="visual-wrapper">
+          
+<picture class="picture">
+  
+  
+  	
+      <img src="/static/media/cards/home/reInvent19_1204_MGM_31_training.jpg"  alt="A man speaking to a small group"  >
+      
+      
+  	
+  
+</picture>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="carousel-item-content">
+          <h1 class="heading heading-4 title" >
+	Code Green! Hackathon
+</h1>
+
+          <p class="item-copy copy body">Join us for an all-day coding event for builders to solve a sustainability-related technical challenge.
+</p>
+          <a href="/learn/jams-and-gamedays/#codegreen" class="cta-link cta-copy trkButton" title="Learn more"    data-cta><span class="copy">Learn more</span><div class="underline"></div></a>
+
+        </div>
+      </li>
+      
+      <li class="carousel-item" data-carousel-item>
+        <div class="visual-wrapper">
+          
+<picture class="picture">
+  
+  
+  	
+      <img src="/static/media/cards/partners/2021_reInvent_JeffBarrrSWAGCorner.jpg"  alt="Jeff Barr wearing VR goggles"  >
+      
+      
+  	
+  
+</picture>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="carousel-item-content">
+          <h1 class="heading heading-4 title" >
+	Partner Solutions Day
+</h1>
+
+          <p class="item-copy copy body">Join us virtually on Mon, Dec. 6 for new AWS Partner sessions, virtual demos, and Jeff Barr's SWAG&nbsp;Corner.
+</p>
+          <a href="/sponsors/partner-solutions-day/" class="cta-link cta-copy trkButton" title="Learn more"    data-cta><span class="copy">Learn more</span><div class="underline"></div></a>
+
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+<ol class="bullets high-contrast" data-carousel-bullets>
+  
+  <li class="bullet" data-bullet></li>
+  
+  <li class="bullet" data-bullet></li>
+  
+  <li class="bullet" data-bullet></li>
+  
+  <li class="bullet" data-bullet></li>
+  
+  <li class="bullet" data-bullet></li>
+  
+  <li class="bullet" data-bullet></li>
+  
+</ol>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+<div  class="C7ImageCarousel is-hidden" data-component="C7ImageCarousel">
+  <div class="content-wrapper" data-fade-in>
+    <ul class="carousel-items-list" data-carousel-list>
+      
+      <li class="carousel-item-wrapper" data-carousel-item>
+        <div class="carousel-visual-wrapper">
+          
+<picture class="picture" data-image-element>
+  
+  
+  	
+      <img src="/static/media/home/reInvent19_1202_venetian_Expo_48-1237x701.png"  alt="Six people posing for a picture from an automated camera"  >
+      
+      
+  	
+  
+</picture>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="carousel-content-wrapper" data-content-element>
+          <div class="eyebrow" data-eyebrow>
+  Community
+</div>
+
+          <h2 class="heading heading-1" data-transition-element >
+	<strong>Expand your network</strong> at re:Invent
+</h2>
+
+          <p class="description copy body" data-transition-element>Join the global cloud community in Las Vegas for networking, peer-to-peer learning, and opportunities to meet with AWS&nbsp;experts.</p>
+          <div class="cta-wrapper" data-transition-element>
+            
+              <a href="/community/" class="cta-link cta-copy trkButton" title="Learn more"    data-cta><span class="copy">Learn more</span><div class="underline"></div></a>
+
+            
+          </div>
+        </div>
+      </li>
+      
+    </ul>
+      
+<div class="carousel-controls">
+  <button class="chevron-button previous carousel-button"  data-carousel-button="previous" role=”button”>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+    <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+  </svg>
+</button>
+
+  <button class="chevron-button next carousel-button"  data-carousel-button="next" role=”button”>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+    <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+  </svg>
+</button>
+
+</div>
+
+    <div data-fade-in>
+      
+
+<ol class="bullets" data-carousel-bullets>
+  
+  <li class="bullet" data-bullet></li>
+  
+</ol>
+
+    </div>
+  </div>
+</div>
+
+  
+
+<div  class="C7ContentCarousel " data-component="C7ContentCarousel">
+  <div class="content-wrapper" data-fade-in>
+    <div class="carousel-wrapper">
+      <div class="eyebrow" data-eyebrow>
+  VIRTUAL
+</div>
+
+      <ul class="carousel-list" data-carousel-list>
+        
+        <li class="list-item" data-carousel-item>
+          <div class="title-wrapper">
+            <h3 class="heading heading-1" >
+	Get inspired by <strong>AWS&nbsp;Partners</strong>
+</h3>
+
+          </div>
+          <div class="copy-wrapper ">
+            
+            <p class="heading heading-4" >
+	Join Partner Solutions Day on Monday, December 6 for new AWS Partner sessions, virtual demos, and Jeff Barr's Swag Corner! Enable Partner communication under profile or any booth pages to hear from&nbsp;Partners. 
+
+</p>
+
+            
+            <a href="https://virtual.reinvent.awsevents.com/partner-homepage/" class="cta-outline trkButton" title="Register for free"   data-cta  data-cta><span class="copy button">Register for free</span></a>
+
+            
+            
+          </div>
+    
+        </li>
+        
+      </ul>
+    </div>
+    
+
+<ol class="bullets" data-carousel-bullets>
+  
+  <li class="bullet" data-bullet></li>
+  
+</ol>
+
+    <div class="content-wrapper" data-carousel-controls>
+      
+<div class="carousel-controls">
+  <button class="chevron-button previous carousel-button"  data-carousel-button="previous" role=”button”>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+    <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+  </svg>
+</button>
+
+  <button class="chevron-button next carousel-button"  data-carousel-button="next" role=”button”>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 10 16">
+    <path d="M2.05.78L.72 2.1 6.62 8l-5.9 5.9 1.33 1.32L9.28 8 2.05.78z"/>
+  </svg>
+</button>
+
+</div>
+
+    </div>
+  </div>
+</div>
+
+  
+
+<div  class="C22Masonry" >
+  <div class="content-wrapper">
+    
+    <div class="title-wrapper">
+      <div class="eyebrow">
+  GET READY
+</div>
+
+      <h2 class="heading heading-1" >
+	<strong>Plan</strong> your re:Invent
+</h2>
+
+    </div>
+    
+    
+    
+    <ul class="events-wrapper" data-masonry-grid>
+      
+        <li class="event  " data-masonry-tile>
+          
+
+<div class="masonry-tile" id="Agenda">
+  
+  <div class="visual-wrapper">
+    
+      
+<picture class="picture">
+  
+  
+  	
+      <img src="/static/media/cards/home/reInvent19_1202_venetian_138.jpg"  alt="A motion-blurred picture of people walking under a Welcome to AWS re:Invent sign"  >
+      
+      
+  	
+  
+</picture>
+
+
+
+
+
+
+
+
+
+
+    
+  </div>
+
+  
+  
+  
+  <div class="copy-wrapper">
+    
+
+    
+    <h2 class="heading heading-4" >
+	Agenda
+</h2>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <p class="copy body">
+      Browse the high-level agenda, and start planning your re:Invent learning&nbsp;experience.
+    </p>
+    
+
+    
+
+    
+     <a href="/agenda/" class="cta-link cta-copy trkButton" title="Learn more"    data-cta><span class="copy">Learn more</span><div class="underline"></div></a>
+
+    
+
+    
+  </div>
+</div>
+
+        </li>
+      
+        <li class="event  " data-masonry-tile>
+          
+
+<div class="masonry-tile" id="Campus">
+  
+  <div class="visual-wrapper">
+    
+      
+<picture class="picture">
+  
+  
+  	
+      <img src="/static/media/home/reInvent19_1204_venetian_52.jpg"  alt="Two men looking at a campus map"  >
+      
+      
+  	
+  
+</picture>
+
+
+
+
+
+
+
+
+
+
+    
+  </div>
+
+  
+  
+  
+  <div class="copy-wrapper">
+    
+
+    
+    <h2 class="heading heading-4" >
+	Campus
+</h2>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <p class="copy body">
+      Explore the Campus page for hotel accommodation, transportation, and&nbsp;more.
+    </p>
+    
+
+    
+
+    
+     <a href="/campus/" class="cta-link cta-copy trkButton" title="Learn more"    data-cta><span class="copy">Learn more</span><div class="underline"></div></a>
+
+    
+
+    
+  </div>
+</div>
+
+        </li>
+      
+        <li class="event  " data-masonry-tile>
+          
+
+<div class="masonry-tile" id="Play">
+  
+  <div class="visual-wrapper">
+    
+      
+<picture class="picture">
+  
+  
+  	
+      <img src="/static/media/cards/home/midnight-madness-arcade.jpg"  alt="A woman playing a TRON game"  >
+      
+      
+  	
+  
+</picture>
+
+
+
+
+
+
+
+
+
+
+    
+  </div>
+
+  
+  
+  
+  <div class="copy-wrapper">
+    
+
+    
+    <h2 class="heading heading-4" >
+	Play
+</h2>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <p class="copy body">
+      This year at re:Invent, we have something for everyone. Join us in Las Vegas for a celebration of our 10th annual&nbsp;re:Invent.
+    </p>
+    
+
+    
+
+    
+     <a href="/play/" class="cta-link cta-copy trkButton" title="Learn more"    data-cta><span class="copy">Learn more</span><div class="underline"></div></a>
+
+    
+
+    
+  </div>
+</div>
+
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+  
+
+
+<footer id="footer" class="C12Footer" data-component="C12Footer">
+
+  <div class="content-wrapper">
+    <div class="copy-wrapper" data-fade-in>
+      <a href="/" class="logo-wrapper" title="Home of AWS re:Invent">
+        <svg xmlns="http://www.w3.org/2000/svg" class="logo brand-logo" alt="re:Invent logo" viewBox="0 0 246 56">
+  <g class="logo-part-wrapper logo-aws">
+    <path d="M6.13.57L0 16.88h2.51L4 12.55h6.82l1.53 4.33h2.54L8.76.57zM7.4 2.74l2.8 8H4.62z" class="aws" />
+    <path d="M27.66 16.88L24.53 4.1l-3.16 12.78h-2.73L13.81.57h2.65l3.57 13.67 3.18-13.2h2.68l3.19 13.23L32.67.57h2.56l-4.84 16.31h-2.73z" class="aws" />
+    <path d="M40 9.14a6.84 6.84 0 01-2.9-1.77 3.88 3.88 0 01-.89-2.61 4.22 4.22 0 01.67-2.34A4.54 4.54 0 0138.81.81a7 7 0 013-.59 12.49 12.49 0 014.42.85V3a15.21 15.21 0 00-4.26-.73 4 4 0 00-2.4.63 2.06 2.06 0 00-.85 1.77 2 2 0 00.57 1.5 6.36 6.36 0 002.13 1.11l2.18.8a6.64 6.64 0 012.79 1.71 3.89 3.89 0 01.85 2.58 4.44 4.44 0 01-1.64 3.6 6.8 6.8 0 01-4.42 1.34 10.93 10.93 0 01-4.78-1v-1.88a15.16 15.16 0 004.74.82 4.29 4.29 0 002.66-.73 2.32 2.32 0 001-2 2 2 0 00-.56-1.45A5.39 5.39 0 0042.27 10z" class="aws"/>
+  </g>
+  <g class="logo-part-wrapper logo-re">
+    <path d="M1 54.12V28.25h2.6L3.92 32a13 13 0 013.89-3 10 10 0 014.32-.9 18.51 18.51 0 012.14.15v2.63c-.91-.07-1.72-.11-2.46-.11a9.8 9.8 0 00-4.26.88A11.12 11.12 0 004 34.43v19.69z" />
+    <path d="M28 30.11q-8.26 0-8.74 9.2h15.9c0-.48.06-1.05.06-1.7A7.79 7.79 0 0033.35 32 7.14 7.14 0 0028 30.11zm-8.78 11.57q.06 5.39 2.41 8t7.27 2.57a21.36 21.36 0 008.63-1.8v2.41a18 18 0 01-8.84 2.06q-6.23 0-9.36-3.47t-3.14-10.34q0-6.48 3.16-10t8.87-3.58c3.17 0 5.6.9 7.3 2.68s2.53 4.33 2.53 7.66a19.85 19.85 0 01-.31 3.86z" />
+  </g>
+  <g class="logo-part-wrapper logo-colon">
+    <path d="M45 54.43a2.31 2.31 0 01-1.7-.67 2.36 2.36 0 01-.65-1.7 2.43 2.43 0 01.65-1.75 2.31 2.31 0 011.7-.66 2.27 2.27 0 011.7.66 2.39 2.39 0 01.66 1.75 2.32 2.32 0 01-.66 1.7 2.28 2.28 0 01-1.7.67m0-21.7a2.28 2.28 0 01-1.7-.67 2.36 2.36 0 01-.65-1.7 2.43 2.43 0 01.65-1.75A2.31 2.31 0 0145 28a2.27 2.27 0 011.7.66 2.39 2.39 0 01.66 1.75 2.32 2.32 0 01-.66 1.7 2.24 2.24 0 01-1.7.67" class="cls-2"/>
+  </g>
+  <g class="logo-part-wrapper logo-invent">
+    <path d="M60.55 54.12h4.64V.47h-4.64v53.65z" />
+    <path d="M102.75 54.12V27.64q0-5-2-7.31C99.47 18.8 97.36 18 94.48 18a27.46 27.46 0 00-15.36 5v31.12h-4.49V15.18h3.94l.43 4.49a32.71 32.71 0 018.11-4.18A25.3 25.3 0 0195.42 14q5.74 0 8.78 3c2 2 3 4.91 3 8.78v28.34z" />
+    <path d="M125.52 54.12l-15.99-38.94h4.89l13.54 34.37 13.55-34.37h4.72l-15.98 38.94h-4.73z" />
+    <path d="M164 18q-12.44 0-13.15 13.86h23.95c0-.72.08-1.57.08-2.55q0-5.58-2.76-8.44T164 18zm-13.14 17.38q.07 8.13 3.62 12c2.37 2.59 6 3.87 11 3.87a32.28 32.28 0 0013-2.7v3.63a27 27 0 01-13.31 3.1q-9.36 0-14.09-5.23t-4.73-15.52q0-9.75 4.77-15.13t13.29-5.4q7.16 0 11 4t3.82 11.54a30.13 30.13 0 01-.47 5.8z" />
+    <path d="M213.28 54.12V27.64q0-5-2-7.31T205 18a27.46 27.46 0 00-15.36 5v31.12h-4.49V15.18h3.94l.47 4.49a32.54 32.54 0 018.11-4.18A25.3 25.3 0 01206 14q5.75 0 8.78 3t3 8.78v28.34z" />
+    <path d="M246 53.27a21.62 21.62 0 01-8 1.31q-4.65 0-7.09-2.43c-1.62-1.63-2.44-4-2.44-7.09v-26h-7.4V16l7.56-.7.63-11.38H233v11.26h12.6v3.87H233v25.78c0 2.12.46 3.61 1.38 4.49s2.45 1.32 4.61 1.32a29.41 29.41 0 007-.93z" />
+  </g>
+</svg>
+
+      </a>
+      <div class="content">
+        <div class="title-wrapper">
+          <h3 class="heading heading-3" data-title >
+	Stay up to date with re:Invent&nbsp;2021
+</h3>
+
+        </div>
+        
+        
+<div class="newsletter-form formwrapper" data-form-wrapper>
+  <div class="form-holder" id="form-holder">
+    <form id="mktoForm_32309">
+      <button class="submit-button" role=”button”>
+  <div class="icon-wrapper">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 48 48">
+      <path d="M32.95 17.95l-1.1 1.1 4.17 4.16H9v1.58h27.02l-4.17 4.16 1.1 1.1L39 24l-6.05-6.05z"/>
+    </svg>
+  </div>
+</button>
+
+    </form>
+    <p class="disclaimer-copy copy body">
+      You may
+      <a class="trkButton" href="https://pages.awscloud.com/communication-preferences/" title="Unsubscribe"  target="_blank" rel="noopener noreferrer">unsubscribe</a>
+      at any time. <a
+        class="trkButton"
+        href="https://aws.amazon.com/legal/marketingentities/"
+        title="Marketing Entities"
+        target="_blank" rel="noopener noreferrer"
+        >We</a
+      >
+      handle your information in accordance with the
+      <a class="trkButton" href="https://aws.amazon.com/privacy/" title="AWS Privacy Notice" target="_blank" rel="noopener noreferrer">AWS Privacy Notice</a>.
+    </p>
+  </div>
+  <div class="thank-you hide">
+    <p>Thank you for subscribing to re:Invent&nbsp;updates.</p>
+  </div>
+</div>
+
+<script src="/assets/forms2.min.js"></script>
+<script>
+  MktoForms2.loadForm('//pages.awscloud.com', '112-TZM-766', 32309);
+  MktoForms2.whenReady(function() {
+    MktoForms2.getForm(32309).onSuccess(() => {
+      const form = document.getElementById('form-holder');
+      const thankYouMessage = document.querySelector('.thank-you');
+      form.classList.add('is-sent')
+      thankYouMessage.classList.remove('hide');
+      return false;
+    });
+  });
+</script>
+<!--<script type="text/javascript">
+    (function() {
+      var didInit = false;
+      function initMunchkin() {
+        if(didInit === false) {
+          didInit = true;
+          Munchkin.init('934-ZIW-714');
+        }
+      }
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = '//munchkin.marketo.net/munchkin.js';
+      s.onreadystatechange = function() {
+        if (this.readyState == 'complete' || this.readyState == 'loaded') {
+          initMunchkin();
+        }
+      };
+      s.onload = initMunchkin;
+      document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+    </script>-->
+
+        <div class="social-media-wrapper">
+          <h4 class="heading heading-5" data-social-title >
+	Follow AWS on social media
+</h4>
+
+          
+
+<ul class="social-media-list" data-social-list>
+  
+  <li class="social-media-list-item" data-overview-item>
+    <a href="https://twitter.com/AWScloud" class="social-link" target="_blank" rel="noopener noreferrer" title="Follow us on Twitter" data-social-link aria-label="opens in new window">
+      <svg role="img" xmlns="http://www.w3.org/2000/svg" class="icon twitter" viewBox="0 0 20 20">
+        <title>Twitter</title>
+        <desc>Twitter icon</desc>
+        <path class="twitter" d="M16.29 6.25a5.63 5.63 0 01-1.51.41 2.56 2.56 0 001.15-1.45 5.4 5.4 0 01-1.66.64 2.62 2.62 0 00-4.54 1.79 2.35 2.35 0 00.06.6 7.43 7.43 0 01-5.41-2.75A2.65 2.65 0 004 6.82 2.61 2.61 0 005.19 9 2.64 2.64 0 014 8.68a2.65 2.65 0 002.1 2.58 3 3 0 01-.69.08 2.7 2.7 0 01-.49 0 2.65 2.65 0 002.45 1.83 5.32 5.32 0 01-3.25 1.11 4.29 4.29 0 01-.63 0A7.46 7.46 0 0015 8v-.34a5.33 5.33 0 001.29-1.41z" />
+        <title>YouTube</title>
+        <desc>YouTube icon</desc>
+        <path class="youtube" d="M10.17 5.07a37.22 37.22 0 015.3.29 1.76 1.76 0 011.24 1.25A18.6 18.6 0 0117 10a18.6 18.6 0 01-.29 3.39 1.76 1.76 0 01-1.24 1.25 37.22 37.22 0 01-5.3.29h-.34a37.22 37.22 0 01-5.3-.29 1.76 1.76 0 01-1.24-1.25A17.23 17.23 0 013 10.11v-.22a17.23 17.23 0 01.29-3.28 1.76 1.76 0 011.24-1.25 37.22 37.22 0 015.3-.29zm-1.6 2.85v4.16L12.23 10z" />
+        <title>LinkedIn</title>
+        <desc>LinkedIn icon</desc>
+        <path class="linkedin" d="M15 10.07v3.7h-2.14v-3.44c0-.86-.3-1.47-1.09-1.47a1.2 1.2 0 00-1.1.79 2.31 2.31 0 00-.07.51v3.61H8.47V7.33h2.13v.9a2.16 2.16 0 011.93-1.07C14 7.19 15 8.09 15 10.07zM6.21 4.23A1.13 1.13 0 005 5.35a1.1 1.1 0 00.35.81 1.14 1.14 0 00.84.31 1.12 1.12 0 001.23-1.12 1.13 1.13 0 00-1.21-1.12zm-1.09 9.54h2.14V7.33H5.12z"/>
+        <title>Instagram</title>
+        <desc>Instagram icon</desc>
+        <path class="instagram" d="M10 4H7.53a4.39 4.39 0 00-1.46.28A2.81 2.81 0 005 5a2.81 2.81 0 00-.69 1.06A4.39 4.39 0 004 7.53v4.94a4.39 4.39 0 00.28 1.46A2.81 2.81 0 005 15a3 3 0 001.06.7 4.69 4.69 0 001.47.3h4.94a4.69 4.69 0 001.46-.27 3.17 3.17 0 001.76-1.76 4.69 4.69 0 00.31-1.5V10 7.53a4.69 4.69 0 00-.27-1.46A3 3 0 0015 5a2.81 2.81 0 00-1.06-.69A4.39 4.39 0 0012.47 4H10zm2.42 1.12a3.26 3.26 0 011.12.2 2 2 0 011.14 1.14 3.26 3.26 0 01.2 1.12v4.88a3.26 3.26 0 01-.2 1.12 2 2 0 01-1.14 1.14 3.26 3.26 0 01-1.12.2H7.54a3.26 3.26 0 01-1.12-.2 2 2 0 01-1.14-1.14 3.26 3.26 0 01-.2-1.12V9.37 7.58a3.26 3.26 0 01.2-1.12 2 2 0 011.18-1.14 3.26 3.26 0 011.12-.2h3.05c1.04-.04 1.26-.03 1.79 0zM10 6.92A3.08 3.08 0 1013.08 10 3.08 3.08 0 0010 6.92zM10 8a2 2 0 11-2 2 2 2 0 012-2zm3.2-1.92a.72.72 0 10.72.72.72.72 0 00-.72-.72z" />
+        <title>Twitch</title>
+        <desc>Twitch icon</desc>
+        <path class="twitch" d="M5.83 4.7L5 6.87v8.83h3v1.6h1.68l1.6-1.6h2.45L17 12.41V4.7zm10.06 7.15L14 13.73h-3l-1.6 1.59v-1.59H6.87v-7.9h9zM14 8v3.29h-1.12V8zm-3 0v3.29H9.87V8z"/>
+        <title>Facebook</title>
+        <desc>Facebook icon</desc>
+        <path class="facebook" d="M12.77 10.7l.33-2.16H11V7.15A1.08 1.08 0 0112.25 6h.94V4.15A11.09 11.09 0 0011.52 4 2.63 2.63 0 008.7 6.9v1.64H6.81v2.16H8.7v5.21a7.59 7.59 0 002.33 0V10.7z" />
+      </svg>
+    </a>
+  </li>
+  
+  <li class="social-media-list-item" data-overview-item>
+    <a href="https://www.facebook.com/amazonwebservices/" class="social-link" target="_blank" rel="noopener noreferrer" title="Follow us on Facebook" data-social-link aria-label="opens in new window">
+      <svg role="img" xmlns="http://www.w3.org/2000/svg" class="icon facebook" viewBox="0 0 20 20">
+        <title>Twitter</title>
+        <desc>Twitter icon</desc>
+        <path class="twitter" d="M16.29 6.25a5.63 5.63 0 01-1.51.41 2.56 2.56 0 001.15-1.45 5.4 5.4 0 01-1.66.64 2.62 2.62 0 00-4.54 1.79 2.35 2.35 0 00.06.6 7.43 7.43 0 01-5.41-2.75A2.65 2.65 0 004 6.82 2.61 2.61 0 005.19 9 2.64 2.64 0 014 8.68a2.65 2.65 0 002.1 2.58 3 3 0 01-.69.08 2.7 2.7 0 01-.49 0 2.65 2.65 0 002.45 1.83 5.32 5.32 0 01-3.25 1.11 4.29 4.29 0 01-.63 0A7.46 7.46 0 0015 8v-.34a5.33 5.33 0 001.29-1.41z" />
+        <title>YouTube</title>
+        <desc>YouTube icon</desc>
+        <path class="youtube" d="M10.17 5.07a37.22 37.22 0 015.3.29 1.76 1.76 0 011.24 1.25A18.6 18.6 0 0117 10a18.6 18.6 0 01-.29 3.39 1.76 1.76 0 01-1.24 1.25 37.22 37.22 0 01-5.3.29h-.34a37.22 37.22 0 01-5.3-.29 1.76 1.76 0 01-1.24-1.25A17.23 17.23 0 013 10.11v-.22a17.23 17.23 0 01.29-3.28 1.76 1.76 0 011.24-1.25 37.22 37.22 0 015.3-.29zm-1.6 2.85v4.16L12.23 10z" />
+        <title>LinkedIn</title>
+        <desc>LinkedIn icon</desc>
+        <path class="linkedin" d="M15 10.07v3.7h-2.14v-3.44c0-.86-.3-1.47-1.09-1.47a1.2 1.2 0 00-1.1.79 2.31 2.31 0 00-.07.51v3.61H8.47V7.33h2.13v.9a2.16 2.16 0 011.93-1.07C14 7.19 15 8.09 15 10.07zM6.21 4.23A1.13 1.13 0 005 5.35a1.1 1.1 0 00.35.81 1.14 1.14 0 00.84.31 1.12 1.12 0 001.23-1.12 1.13 1.13 0 00-1.21-1.12zm-1.09 9.54h2.14V7.33H5.12z"/>
+        <title>Instagram</title>
+        <desc>Instagram icon</desc>
+        <path class="instagram" d="M10 4H7.53a4.39 4.39 0 00-1.46.28A2.81 2.81 0 005 5a2.81 2.81 0 00-.69 1.06A4.39 4.39 0 004 7.53v4.94a4.39 4.39 0 00.28 1.46A2.81 2.81 0 005 15a3 3 0 001.06.7 4.69 4.69 0 001.47.3h4.94a4.69 4.69 0 001.46-.27 3.17 3.17 0 001.76-1.76 4.69 4.69 0 00.31-1.5V10 7.53a4.69 4.69 0 00-.27-1.46A3 3 0 0015 5a2.81 2.81 0 00-1.06-.69A4.39 4.39 0 0012.47 4H10zm2.42 1.12a3.26 3.26 0 011.12.2 2 2 0 011.14 1.14 3.26 3.26 0 01.2 1.12v4.88a3.26 3.26 0 01-.2 1.12 2 2 0 01-1.14 1.14 3.26 3.26 0 01-1.12.2H7.54a3.26 3.26 0 01-1.12-.2 2 2 0 01-1.14-1.14 3.26 3.26 0 01-.2-1.12V9.37 7.58a3.26 3.26 0 01.2-1.12 2 2 0 011.18-1.14 3.26 3.26 0 011.12-.2h3.05c1.04-.04 1.26-.03 1.79 0zM10 6.92A3.08 3.08 0 1013.08 10 3.08 3.08 0 0010 6.92zM10 8a2 2 0 11-2 2 2 2 0 012-2zm3.2-1.92a.72.72 0 10.72.72.72.72 0 00-.72-.72z" />
+        <title>Twitch</title>
+        <desc>Twitch icon</desc>
+        <path class="twitch" d="M5.83 4.7L5 6.87v8.83h3v1.6h1.68l1.6-1.6h2.45L17 12.41V4.7zm10.06 7.15L14 13.73h-3l-1.6 1.59v-1.59H6.87v-7.9h9zM14 8v3.29h-1.12V8zm-3 0v3.29H9.87V8z"/>
+        <title>Facebook</title>
+        <desc>Facebook icon</desc>
+        <path class="facebook" d="M12.77 10.7l.33-2.16H11V7.15A1.08 1.08 0 0112.25 6h.94V4.15A11.09 11.09 0 0011.52 4 2.63 2.63 0 008.7 6.9v1.64H6.81v2.16H8.7v5.21a7.59 7.59 0 002.33 0V10.7z" />
+      </svg>
+    </a>
+  </li>
+  
+  <li class="social-media-list-item" data-overview-item>
+    <a href="https://www.linkedin.com/company/amazon-web-services" class="social-link" target="_blank" rel="noopener noreferrer" title="Connect with us on LinkedIn" data-social-link aria-label="opens in new window">
+      <svg role="img" xmlns="http://www.w3.org/2000/svg" class="icon linkedin" viewBox="0 0 20 20">
+        <title>Twitter</title>
+        <desc>Twitter icon</desc>
+        <path class="twitter" d="M16.29 6.25a5.63 5.63 0 01-1.51.41 2.56 2.56 0 001.15-1.45 5.4 5.4 0 01-1.66.64 2.62 2.62 0 00-4.54 1.79 2.35 2.35 0 00.06.6 7.43 7.43 0 01-5.41-2.75A2.65 2.65 0 004 6.82 2.61 2.61 0 005.19 9 2.64 2.64 0 014 8.68a2.65 2.65 0 002.1 2.58 3 3 0 01-.69.08 2.7 2.7 0 01-.49 0 2.65 2.65 0 002.45 1.83 5.32 5.32 0 01-3.25 1.11 4.29 4.29 0 01-.63 0A7.46 7.46 0 0015 8v-.34a5.33 5.33 0 001.29-1.41z" />
+        <title>YouTube</title>
+        <desc>YouTube icon</desc>
+        <path class="youtube" d="M10.17 5.07a37.22 37.22 0 015.3.29 1.76 1.76 0 011.24 1.25A18.6 18.6 0 0117 10a18.6 18.6 0 01-.29 3.39 1.76 1.76 0 01-1.24 1.25 37.22 37.22 0 01-5.3.29h-.34a37.22 37.22 0 01-5.3-.29 1.76 1.76 0 01-1.24-1.25A17.23 17.23 0 013 10.11v-.22a17.23 17.23 0 01.29-3.28 1.76 1.76 0 011.24-1.25 37.22 37.22 0 015.3-.29zm-1.6 2.85v4.16L12.23 10z" />
+        <title>LinkedIn</title>
+        <desc>LinkedIn icon</desc>
+        <path class="linkedin" d="M15 10.07v3.7h-2.14v-3.44c0-.86-.3-1.47-1.09-1.47a1.2 1.2 0 00-1.1.79 2.31 2.31 0 00-.07.51v3.61H8.47V7.33h2.13v.9a2.16 2.16 0 011.93-1.07C14 7.19 15 8.09 15 10.07zM6.21 4.23A1.13 1.13 0 005 5.35a1.1 1.1 0 00.35.81 1.14 1.14 0 00.84.31 1.12 1.12 0 001.23-1.12 1.13 1.13 0 00-1.21-1.12zm-1.09 9.54h2.14V7.33H5.12z"/>
+        <title>Instagram</title>
+        <desc>Instagram icon</desc>
+        <path class="instagram" d="M10 4H7.53a4.39 4.39 0 00-1.46.28A2.81 2.81 0 005 5a2.81 2.81 0 00-.69 1.06A4.39 4.39 0 004 7.53v4.94a4.39 4.39 0 00.28 1.46A2.81 2.81 0 005 15a3 3 0 001.06.7 4.69 4.69 0 001.47.3h4.94a4.69 4.69 0 001.46-.27 3.17 3.17 0 001.76-1.76 4.69 4.69 0 00.31-1.5V10 7.53a4.69 4.69 0 00-.27-1.46A3 3 0 0015 5a2.81 2.81 0 00-1.06-.69A4.39 4.39 0 0012.47 4H10zm2.42 1.12a3.26 3.26 0 011.12.2 2 2 0 011.14 1.14 3.26 3.26 0 01.2 1.12v4.88a3.26 3.26 0 01-.2 1.12 2 2 0 01-1.14 1.14 3.26 3.26 0 01-1.12.2H7.54a3.26 3.26 0 01-1.12-.2 2 2 0 01-1.14-1.14 3.26 3.26 0 01-.2-1.12V9.37 7.58a3.26 3.26 0 01.2-1.12 2 2 0 011.18-1.14 3.26 3.26 0 011.12-.2h3.05c1.04-.04 1.26-.03 1.79 0zM10 6.92A3.08 3.08 0 1013.08 10 3.08 3.08 0 0010 6.92zM10 8a2 2 0 11-2 2 2 2 0 012-2zm3.2-1.92a.72.72 0 10.72.72.72.72 0 00-.72-.72z" />
+        <title>Twitch</title>
+        <desc>Twitch icon</desc>
+        <path class="twitch" d="M5.83 4.7L5 6.87v8.83h3v1.6h1.68l1.6-1.6h2.45L17 12.41V4.7zm10.06 7.15L14 13.73h-3l-1.6 1.59v-1.59H6.87v-7.9h9zM14 8v3.29h-1.12V8zm-3 0v3.29H9.87V8z"/>
+        <title>Facebook</title>
+        <desc>Facebook icon</desc>
+        <path class="facebook" d="M12.77 10.7l.33-2.16H11V7.15A1.08 1.08 0 0112.25 6h.94V4.15A11.09 11.09 0 0011.52 4 2.63 2.63 0 008.7 6.9v1.64H6.81v2.16H8.7v5.21a7.59 7.59 0 002.33 0V10.7z" />
+      </svg>
+    </a>
+  </li>
+  
+  <li class="social-media-list-item" data-overview-item>
+    <a href="https://www.youtube.com/user/AmazonWebServices" class="social-link" target="_blank" rel="noopener noreferrer" title="Subscribe to our YouTube Channel" data-social-link aria-label="opens in new window">
+      <svg role="img" xmlns="http://www.w3.org/2000/svg" class="icon youtube" viewBox="0 0 20 20">
+        <title>Twitter</title>
+        <desc>Twitter icon</desc>
+        <path class="twitter" d="M16.29 6.25a5.63 5.63 0 01-1.51.41 2.56 2.56 0 001.15-1.45 5.4 5.4 0 01-1.66.64 2.62 2.62 0 00-4.54 1.79 2.35 2.35 0 00.06.6 7.43 7.43 0 01-5.41-2.75A2.65 2.65 0 004 6.82 2.61 2.61 0 005.19 9 2.64 2.64 0 014 8.68a2.65 2.65 0 002.1 2.58 3 3 0 01-.69.08 2.7 2.7 0 01-.49 0 2.65 2.65 0 002.45 1.83 5.32 5.32 0 01-3.25 1.11 4.29 4.29 0 01-.63 0A7.46 7.46 0 0015 8v-.34a5.33 5.33 0 001.29-1.41z" />
+        <title>YouTube</title>
+        <desc>YouTube icon</desc>
+        <path class="youtube" d="M10.17 5.07a37.22 37.22 0 015.3.29 1.76 1.76 0 011.24 1.25A18.6 18.6 0 0117 10a18.6 18.6 0 01-.29 3.39 1.76 1.76 0 01-1.24 1.25 37.22 37.22 0 01-5.3.29h-.34a37.22 37.22 0 01-5.3-.29 1.76 1.76 0 01-1.24-1.25A17.23 17.23 0 013 10.11v-.22a17.23 17.23 0 01.29-3.28 1.76 1.76 0 011.24-1.25 37.22 37.22 0 015.3-.29zm-1.6 2.85v4.16L12.23 10z" />
+        <title>LinkedIn</title>
+        <desc>LinkedIn icon</desc>
+        <path class="linkedin" d="M15 10.07v3.7h-2.14v-3.44c0-.86-.3-1.47-1.09-1.47a1.2 1.2 0 00-1.1.79 2.31 2.31 0 00-.07.51v3.61H8.47V7.33h2.13v.9a2.16 2.16 0 011.93-1.07C14 7.19 15 8.09 15 10.07zM6.21 4.23A1.13 1.13 0 005 5.35a1.1 1.1 0 00.35.81 1.14 1.14 0 00.84.31 1.12 1.12 0 001.23-1.12 1.13 1.13 0 00-1.21-1.12zm-1.09 9.54h2.14V7.33H5.12z"/>
+        <title>Instagram</title>
+        <desc>Instagram icon</desc>
+        <path class="instagram" d="M10 4H7.53a4.39 4.39 0 00-1.46.28A2.81 2.81 0 005 5a2.81 2.81 0 00-.69 1.06A4.39 4.39 0 004 7.53v4.94a4.39 4.39 0 00.28 1.46A2.81 2.81 0 005 15a3 3 0 001.06.7 4.69 4.69 0 001.47.3h4.94a4.69 4.69 0 001.46-.27 3.17 3.17 0 001.76-1.76 4.69 4.69 0 00.31-1.5V10 7.53a4.69 4.69 0 00-.27-1.46A3 3 0 0015 5a2.81 2.81 0 00-1.06-.69A4.39 4.39 0 0012.47 4H10zm2.42 1.12a3.26 3.26 0 011.12.2 2 2 0 011.14 1.14 3.26 3.26 0 01.2 1.12v4.88a3.26 3.26 0 01-.2 1.12 2 2 0 01-1.14 1.14 3.26 3.26 0 01-1.12.2H7.54a3.26 3.26 0 01-1.12-.2 2 2 0 01-1.14-1.14 3.26 3.26 0 01-.2-1.12V9.37 7.58a3.26 3.26 0 01.2-1.12 2 2 0 011.18-1.14 3.26 3.26 0 011.12-.2h3.05c1.04-.04 1.26-.03 1.79 0zM10 6.92A3.08 3.08 0 1013.08 10 3.08 3.08 0 0010 6.92zM10 8a2 2 0 11-2 2 2 2 0 012-2zm3.2-1.92a.72.72 0 10.72.72.72.72 0 00-.72-.72z" />
+        <title>Twitch</title>
+        <desc>Twitch icon</desc>
+        <path class="twitch" d="M5.83 4.7L5 6.87v8.83h3v1.6h1.68l1.6-1.6h2.45L17 12.41V4.7zm10.06 7.15L14 13.73h-3l-1.6 1.59v-1.59H6.87v-7.9h9zM14 8v3.29h-1.12V8zm-3 0v3.29H9.87V8z"/>
+        <title>Facebook</title>
+        <desc>Facebook icon</desc>
+        <path class="facebook" d="M12.77 10.7l.33-2.16H11V7.15A1.08 1.08 0 0112.25 6h.94V4.15A11.09 11.09 0 0011.52 4 2.63 2.63 0 008.7 6.9v1.64H6.81v2.16H8.7v5.21a7.59 7.59 0 002.33 0V10.7z" />
+      </svg>
+    </a>
+  </li>
+  
+  <li class="social-media-list-item" data-overview-item>
+    <a href="https://www.instagram.com/amazonwebservices" class="social-link" target="_blank" rel="noopener noreferrer" title="Follow us on instagram" data-social-link aria-label="opens in new window">
+      <svg role="img" xmlns="http://www.w3.org/2000/svg" class="icon instagram" viewBox="0 0 20 20">
+        <title>Twitter</title>
+        <desc>Twitter icon</desc>
+        <path class="twitter" d="M16.29 6.25a5.63 5.63 0 01-1.51.41 2.56 2.56 0 001.15-1.45 5.4 5.4 0 01-1.66.64 2.62 2.62 0 00-4.54 1.79 2.35 2.35 0 00.06.6 7.43 7.43 0 01-5.41-2.75A2.65 2.65 0 004 6.82 2.61 2.61 0 005.19 9 2.64 2.64 0 014 8.68a2.65 2.65 0 002.1 2.58 3 3 0 01-.69.08 2.7 2.7 0 01-.49 0 2.65 2.65 0 002.45 1.83 5.32 5.32 0 01-3.25 1.11 4.29 4.29 0 01-.63 0A7.46 7.46 0 0015 8v-.34a5.33 5.33 0 001.29-1.41z" />
+        <title>YouTube</title>
+        <desc>YouTube icon</desc>
+        <path class="youtube" d="M10.17 5.07a37.22 37.22 0 015.3.29 1.76 1.76 0 011.24 1.25A18.6 18.6 0 0117 10a18.6 18.6 0 01-.29 3.39 1.76 1.76 0 01-1.24 1.25 37.22 37.22 0 01-5.3.29h-.34a37.22 37.22 0 01-5.3-.29 1.76 1.76 0 01-1.24-1.25A17.23 17.23 0 013 10.11v-.22a17.23 17.23 0 01.29-3.28 1.76 1.76 0 011.24-1.25 37.22 37.22 0 015.3-.29zm-1.6 2.85v4.16L12.23 10z" />
+        <title>LinkedIn</title>
+        <desc>LinkedIn icon</desc>
+        <path class="linkedin" d="M15 10.07v3.7h-2.14v-3.44c0-.86-.3-1.47-1.09-1.47a1.2 1.2 0 00-1.1.79 2.31 2.31 0 00-.07.51v3.61H8.47V7.33h2.13v.9a2.16 2.16 0 011.93-1.07C14 7.19 15 8.09 15 10.07zM6.21 4.23A1.13 1.13 0 005 5.35a1.1 1.1 0 00.35.81 1.14 1.14 0 00.84.31 1.12 1.12 0 001.23-1.12 1.13 1.13 0 00-1.21-1.12zm-1.09 9.54h2.14V7.33H5.12z"/>
+        <title>Instagram</title>
+        <desc>Instagram icon</desc>
+        <path class="instagram" d="M10 4H7.53a4.39 4.39 0 00-1.46.28A2.81 2.81 0 005 5a2.81 2.81 0 00-.69 1.06A4.39 4.39 0 004 7.53v4.94a4.39 4.39 0 00.28 1.46A2.81 2.81 0 005 15a3 3 0 001.06.7 4.69 4.69 0 001.47.3h4.94a4.69 4.69 0 001.46-.27 3.17 3.17 0 001.76-1.76 4.69 4.69 0 00.31-1.5V10 7.53a4.69 4.69 0 00-.27-1.46A3 3 0 0015 5a2.81 2.81 0 00-1.06-.69A4.39 4.39 0 0012.47 4H10zm2.42 1.12a3.26 3.26 0 011.12.2 2 2 0 011.14 1.14 3.26 3.26 0 01.2 1.12v4.88a3.26 3.26 0 01-.2 1.12 2 2 0 01-1.14 1.14 3.26 3.26 0 01-1.12.2H7.54a3.26 3.26 0 01-1.12-.2 2 2 0 01-1.14-1.14 3.26 3.26 0 01-.2-1.12V9.37 7.58a3.26 3.26 0 01.2-1.12 2 2 0 011.18-1.14 3.26 3.26 0 011.12-.2h3.05c1.04-.04 1.26-.03 1.79 0zM10 6.92A3.08 3.08 0 1013.08 10 3.08 3.08 0 0010 6.92zM10 8a2 2 0 11-2 2 2 2 0 012-2zm3.2-1.92a.72.72 0 10.72.72.72.72 0 00-.72-.72z" />
+        <title>Twitch</title>
+        <desc>Twitch icon</desc>
+        <path class="twitch" d="M5.83 4.7L5 6.87v8.83h3v1.6h1.68l1.6-1.6h2.45L17 12.41V4.7zm10.06 7.15L14 13.73h-3l-1.6 1.59v-1.59H6.87v-7.9h9zM14 8v3.29h-1.12V8zm-3 0v3.29H9.87V8z"/>
+        <title>Facebook</title>
+        <desc>Facebook icon</desc>
+        <path class="facebook" d="M12.77 10.7l.33-2.16H11V7.15A1.08 1.08 0 0112.25 6h.94V4.15A11.09 11.09 0 0011.52 4 2.63 2.63 0 008.7 6.9v1.64H6.81v2.16H8.7v5.21a7.59 7.59 0 002.33 0V10.7z" />
+      </svg>
+    </a>
+  </li>
+  
+  <li class="social-media-list-item" data-overview-item>
+    <a href="https://www.twitch.tv/aws" class="social-link" target="_blank" rel="noopener noreferrer" title="Watch us on twitch" data-social-link aria-label="opens in new window">
+      <svg role="img" xmlns="http://www.w3.org/2000/svg" class="icon twitch" viewBox="0 0 20 20">
+        <title>Twitter</title>
+        <desc>Twitter icon</desc>
+        <path class="twitter" d="M16.29 6.25a5.63 5.63 0 01-1.51.41 2.56 2.56 0 001.15-1.45 5.4 5.4 0 01-1.66.64 2.62 2.62 0 00-4.54 1.79 2.35 2.35 0 00.06.6 7.43 7.43 0 01-5.41-2.75A2.65 2.65 0 004 6.82 2.61 2.61 0 005.19 9 2.64 2.64 0 014 8.68a2.65 2.65 0 002.1 2.58 3 3 0 01-.69.08 2.7 2.7 0 01-.49 0 2.65 2.65 0 002.45 1.83 5.32 5.32 0 01-3.25 1.11 4.29 4.29 0 01-.63 0A7.46 7.46 0 0015 8v-.34a5.33 5.33 0 001.29-1.41z" />
+        <title>YouTube</title>
+        <desc>YouTube icon</desc>
+        <path class="youtube" d="M10.17 5.07a37.22 37.22 0 015.3.29 1.76 1.76 0 011.24 1.25A18.6 18.6 0 0117 10a18.6 18.6 0 01-.29 3.39 1.76 1.76 0 01-1.24 1.25 37.22 37.22 0 01-5.3.29h-.34a37.22 37.22 0 01-5.3-.29 1.76 1.76 0 01-1.24-1.25A17.23 17.23 0 013 10.11v-.22a17.23 17.23 0 01.29-3.28 1.76 1.76 0 011.24-1.25 37.22 37.22 0 015.3-.29zm-1.6 2.85v4.16L12.23 10z" />
+        <title>LinkedIn</title>
+        <desc>LinkedIn icon</desc>
+        <path class="linkedin" d="M15 10.07v3.7h-2.14v-3.44c0-.86-.3-1.47-1.09-1.47a1.2 1.2 0 00-1.1.79 2.31 2.31 0 00-.07.51v3.61H8.47V7.33h2.13v.9a2.16 2.16 0 011.93-1.07C14 7.19 15 8.09 15 10.07zM6.21 4.23A1.13 1.13 0 005 5.35a1.1 1.1 0 00.35.81 1.14 1.14 0 00.84.31 1.12 1.12 0 001.23-1.12 1.13 1.13 0 00-1.21-1.12zm-1.09 9.54h2.14V7.33H5.12z"/>
+        <title>Instagram</title>
+        <desc>Instagram icon</desc>
+        <path class="instagram" d="M10 4H7.53a4.39 4.39 0 00-1.46.28A2.81 2.81 0 005 5a2.81 2.81 0 00-.69 1.06A4.39 4.39 0 004 7.53v4.94a4.39 4.39 0 00.28 1.46A2.81 2.81 0 005 15a3 3 0 001.06.7 4.69 4.69 0 001.47.3h4.94a4.69 4.69 0 001.46-.27 3.17 3.17 0 001.76-1.76 4.69 4.69 0 00.31-1.5V10 7.53a4.69 4.69 0 00-.27-1.46A3 3 0 0015 5a2.81 2.81 0 00-1.06-.69A4.39 4.39 0 0012.47 4H10zm2.42 1.12a3.26 3.26 0 011.12.2 2 2 0 011.14 1.14 3.26 3.26 0 01.2 1.12v4.88a3.26 3.26 0 01-.2 1.12 2 2 0 01-1.14 1.14 3.26 3.26 0 01-1.12.2H7.54a3.26 3.26 0 01-1.12-.2 2 2 0 01-1.14-1.14 3.26 3.26 0 01-.2-1.12V9.37 7.58a3.26 3.26 0 01.2-1.12 2 2 0 011.18-1.14 3.26 3.26 0 011.12-.2h3.05c1.04-.04 1.26-.03 1.79 0zM10 6.92A3.08 3.08 0 1013.08 10 3.08 3.08 0 0010 6.92zM10 8a2 2 0 11-2 2 2 2 0 012-2zm3.2-1.92a.72.72 0 10.72.72.72.72 0 00-.72-.72z" />
+        <title>Twitch</title>
+        <desc>Twitch icon</desc>
+        <path class="twitch" d="M5.83 4.7L5 6.87v8.83h3v1.6h1.68l1.6-1.6h2.45L17 12.41V4.7zm10.06 7.15L14 13.73h-3l-1.6 1.59v-1.59H6.87v-7.9h9zM14 8v3.29h-1.12V8zm-3 0v3.29H9.87V8z"/>
+        <title>Facebook</title>
+        <desc>Facebook icon</desc>
+        <path class="facebook" d="M12.77 10.7l.33-2.16H11V7.15A1.08 1.08 0 0112.25 6h.94V4.15A11.09 11.09 0 0011.52 4 2.63 2.63 0 008.7 6.9v1.64H6.81v2.16H8.7v5.21a7.59 7.59 0 002.33 0V10.7z" />
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+        </div>
+                
+      </div>
+      
+      <nav class="footer-navigation" role="navigation" aria-label="Main">
+        
+        <div class="column">
+          
+          <a href="/faqs/#accessibility" class="link heading heading-5 trkButton"  title="Accessibility" data-navigation-link>Accessibility</a>
+          
+          <a href="/sponsorship/" class="link heading heading-5 trkButton"  title="Become a sponsor" data-navigation-link>Become a sponsor</a>
+          
+          <a href="/bookable-meeting-space/" class="link heading heading-5 trkButton"  title="Bookable meeting space" data-navigation-link>Bookable meeting space</a>
+          
+          <a href="https://aws.amazon.com/codeofconduct/" class="link heading heading-5 " target="_blank" title="Code of conduct" data-navigation-link>Code of conduct</a>
+          
+          <a href="/health-measures/" class="link heading heading-5 trkButton"  title="Health measures" data-navigation-link>Health measures</a>
+          
+          <a href="/sponsors/" class="link heading heading-5 trkButton"  title="Sponsors" data-navigation-link>Sponsors</a>
+          
+          <a href="https://aws.amazon.com/events/terms/" class="link heading heading-5 " target="_blank" title="Terms and conditions" data-navigation-link>Terms and conditions</a>
+          
+        </div>
+        
+      </nav>
+    </div>
+    <div id="footer-bottom" class="footer-copy">
+        <p class="copy"><a class="cta" href="https://aws.amazon.com/privacy/?nc2= reinvent21_f_pr" target="_blank" rel="noopener noreferrer">Privacy</a> • <a class="cta" href="https://aws.amazon.com/terms/?nc2= reinvent21_f_le" target="_blank" rel="noopener noreferrer">Site Terms</a> • <a class="cta" href="#footer-bottom" onclick="shortbread.customizeCookies()">Cookie Preferences</a> • © 2021, Amazon&nbsp;Web&nbsp;Services, Inc. or its affiliates. All rights&nbsp;reserved.</p>
+      </div>
+  </div>
+</footer>
+</div>
+
+  </div>
+  <script src="/assets/bundle.js"></script>
+  <!--/DO NOT REMOVE/ -->
+<script type="text/javascript" src="/assets/trk.js"></script>
+<script src="https://a0.awsstatic.com/s_code/js/3.0/awshome_s_code.js"></script>
+<script language="JavaScript" type="text/javascript">
+  shortbread = AWSCShortbread({domain: ".awsevents.com"});
+  shortbread.checkForCookieConsent();
+</script>
+<!--/DO NOT REMOVE/ -->
+</body>
+</html>
