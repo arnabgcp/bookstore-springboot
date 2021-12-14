@@ -1,0 +1,11 @@
+apiVersion: extensions/v1beta1 
+kind: Ingress
+metadata:
+  name: bookstore
+  annotations:
+          ingress.gcp.kubernetes.io/pre-shared-cert: "mcrt-3e1790db-d210-4fcf-a41f-68682a4bce0f"
+          kubernetes.io/ingress.allow-http: "false"          
+spec:
+  backend:
+    serviceName: frontend-service
+    servicePort: 80
