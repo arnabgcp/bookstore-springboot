@@ -37,7 +37,7 @@
 </nav>
 
 <div class="content">
-<h3>Books Management Application Demo - Running on Google Kubernetes Engine</h3>
+Books Management Application Demo - Running on Google Kubernetes Engine
 </div>
 
  <div class="content2">
@@ -52,19 +52,19 @@
             <tr>
                 <th>Title: <font color="red">*</font></th>
                 <td>
-	<input type="text" name="title" size="60" value="<c:out value='${book.title}' />" />	
+	<input type="text" name="title" id="title" size="60" value="<c:out value='${book.title}' />" />	
 		</td>
             </tr>
             <tr>
                 <th>Author: <font color="red">*</font></th>
                 <td>
-			<input type="text" name="author" size="5" value="<c:out value='${book.author}' />" />
+			<input type="text" name="author" id="author" size="5" value="<c:out value='${book.author}' />" />
                 </td>
             </tr>
             <tr>
                 <th>Price (in USD): <font color="red">*</font></th>
                 <td>
-			<input type="text" name="price" size="5" value="<c:out value='${book.price}' />" />
+			<input type="text" name="price" id="price" size="5" value="<c:out value='${book.price}' />" />
                 </td>
             </tr>
             <tr>
@@ -79,8 +79,6 @@
             </tr>
         </table>
         </form>
-    
     </div>	
-   
 </body>
 </html>
