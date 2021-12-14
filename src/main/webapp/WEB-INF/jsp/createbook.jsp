@@ -31,7 +31,7 @@
       <a href="/listallbooks"><li>List All Books</li></a>
       <a href="/showupdateform"><li>Update/Delete Books</li></a>
       <a href="/"><li>Sign Out</li></a>
-      <a href="#"><li>Report Issues</li></a>
+      <a href="mailto:karthick.pakkiriswamy@cognizant.com;arnab.dutta4@cognizant.com"><li>Report Issues</li></a>
      </ul>
   </div>
 </nav>
@@ -40,12 +40,13 @@
 Books Management Application Demo - Running on Google Kubernetes Engine 
 </div>
 
+ <div class="content2"> </div>
+
  <div class="content2">
                 <h3>
-                Use this form to add the details for new books :
+                Use this form to add new book to stock:
                 </h3>
-            </div>
-
+</div>
 
         <div align="center" class="content1">
 			<form name="bookform" action="/addnewbook" method="post">
@@ -53,25 +54,19 @@ Books Management Application Demo - Running on Google Kubernetes Engine
             <tr>
                 <th>Title: <font color="red">*</font></th>
                 <td>
-	<input type="text" name="title" size="60"
-                                        value="<c:out value='${book.title}' />"
-                                />	
+			<input type="text" name="title" size="60" id="title" value="<c:out value='${book.title}' />"
 		</td>
             </tr>
             <tr>
                 <th>Author: <font color="red">*</font></th>
                 <td>
-
-			<input type="text" name="author" size="5"
-                                        value="<c:out value='${book.author}' />"
-                                />
+			<input type="text" name="author" size="5" id="author" value="<c:out value='${book.author}' />"
                 </td>
             </tr>
             <tr>
                 <th>Price (in USD): <font color="red">*</font></th>
                 <td>
-			<input type="text" name="price" size="5"
-                                        value="<c:out value='${book.price}' />"
+			<input type="text" name="price" size="5" id="price" value="<c:out value='${book.price}' />"
                                 />
                 </td>
             </tr>
