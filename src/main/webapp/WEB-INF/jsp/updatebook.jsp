@@ -31,46 +31,40 @@
       <a href="/listallbooks"><li>List All Books</li></a>
       <a href="/showupdateform"><li>Update/Delete Books</li></a>
       <a href="/"><li>Sign Out</li></a>
-      <a href="#"><li>Report Issues</li></a>
+      <a href="mailto:karthick.pakkiriswamy@cognizant.com"><li>Report Issues</li></a>
      </ul>
   </div>
 </nav>
 
 <div class="content">
-Books Management Application Demo - Running on Google Kubernetes Engine 
+<h3>Books Management Application Demo - Running on Google Kubernetes Engine</h3>
 </div>
 
  <div class="content2">
                 <h3>
-                                Use this form to edit book details
+                Use this form to edit the book details:
                 </h3>
-            </div>
-        <div align="center" class="content1">
+</div>
+        
+	<div align="center" class="content1">
 		<form name="bookform" action="/updatebook/${book_id}" method="post">
         <table border="1" cellpadding="5" id="bookstore">
             <tr>
                 <th>Title: <font color="red">*</font></th>
                 <td>
-	<input type="text" name="title" size="60"
-					value="<c:out value='${book.title}' />"
-                                />	
+	<input type="text" name="title" size="60" value="<c:out value='${book.title}' />" />	
 		</td>
             </tr>
             <tr>
                 <th>Author: <font color="red">*</font></th>
                 <td>
-
-			<input type="text" name="author" size="5"
-                                        value="<c:out value='${book.author}' />"
-                                />
+			<input type="text" name="author" size="5" value="<c:out value='${book.author}' />" />
                 </td>
             </tr>
             <tr>
                 <th>Price (in USD): <font color="red">*</font></th>
                 <td>
-			<input type="text" name="price" size="5"
-                                        value="<c:out value='${book.price}' />"
-                                />
+			<input type="text" name="price" size="5" value="<c:out value='${book.price}' />" />
                 </td>
             </tr>
             <tr>
