@@ -40,8 +40,6 @@
 Books Management Application Demo - Running on Google Kubernetes Engine 
 </div>
 
- <div class="content2"> </div>
-
  <div class="content2">
                 <h3>
                 Use this form to add new book to stock:
@@ -49,7 +47,7 @@ Books Management Application Demo - Running on Google Kubernetes Engine
 </div>
 
         <div align="center" class="content1">
-			<form name="bookform" action="/addnewbook" method="post">
+	<form name="bookform" action="/addnewbook" method="post">
         <table border="1" cellpadding="5" id="bookstore">
             <tr>
                 <th>Title: <font color="red">*</font></th>
@@ -82,8 +80,7 @@ Books Management Application Demo - Running on Google Kubernetes Engine
             </tr>
         </table>
         </form>
-    
-    </div>	
+    	</div>	
    
 </body>
 </html>
