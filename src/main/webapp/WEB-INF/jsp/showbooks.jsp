@@ -36,22 +36,24 @@
       <a href="/addnewbook"><li>Add New Book</li></a>
       <a href="/listallbooks"><li>List All Books</li></a>
       <a href="/showupdateform"><li>Update/Delete Books</li></a>
-      <a href="#"><li>Report Issues</li></a>
+      <a href="mailto:karthick.pakkiriswamy@cognizant.com"><li>Report Issues</li></a>
       <a href="/"><li>Sign Out</li></a>
      </ul>
   </div>
 </nav>
+        
 <div class="content">
-	Books Management Application Demo - Running on Google Kubernetes Engine
+<h3>Books Management Application Demo - Running on Google Kubernetes Engine</h3>
+</div>
+
+ <div class="content2">
+                <h3>
+		Below table will list the available books details
+                </h3>
 </div>
 
 
-<div class="content"> </div>
-		
-    <div align="center" class="content2">
-    <h3>Below are the available books in stock. </h3>
-    </div>
-        <div align="center" class="content1">
+	<div align="center" class="content1">
         <table border="1" id="bookstore">
             <tr>
                 <th width=50>Book ID</th>
