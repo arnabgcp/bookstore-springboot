@@ -30,30 +30,36 @@
       <a href="/listallbooks"><li>List All Books</li></a>
       <a href="/showupdateform"><li>Update/Delete Books</li></a>
       <a href="/"><li>Sign Out</li></a>
-      <a href="#"><li>Report Issues</li></a>
+      <a href="mailto:karthick.pakkiriswamy@cogniant.com"><li>Report Issues</li></a>
      </ul>
   </div>
 </nav>
+
 <div class="content">
-	Books Management Application Demo - Running on Google Kubernetes Engine 
+<h3>Books Management Application Demo - Running on Google Kubernetes Engine</h3>
+</div>
+
+ <div class="content2">
+                <h3>
+                Use this form to update details for existing books in stock:
+                </h3>
 </div>
 	
     <div align="center" class="content1">
         <table border="1" cellpadding="5" id="bookstore">
-            <caption> <h2>Below table will list the available stocks of books </h2> </caption>
             <tr>
-                <th>ID</th>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Price (USD)</th>
+                <th width=50>Book ID</th>
+                <th width=80>Title</th>
+                <th width=60>Author</th>
+                <th width=50>Price (USD)</th>
                 <th>Actions</th>
             </tr>
             <c:forEach var="book" items="${books}">
-                <tr>
-                    <td><c:out value="${book.book_id}" /></td>
+		   <tr>
+                    <td align="center"><c:out value="${book.id}" /></td>
                     <td><c:out value="${book.title}" /></td>
                     <td><c:out value="${book.author}" /></td>
-                    <td><c:out value="${book.price}" /></td>
+                    <td align="right"><c:out value="${book.price}" /></td>
                     <td>
                     	<a href="updatebook/<c:out value='${book.book_id}' />">Edit</a>
                     	&nbsp;&nbsp;&nbsp;&nbsp;
