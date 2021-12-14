@@ -6,7 +6,7 @@
 	<title>Books Management Application Demo - Running on Google Kubernetes Engine</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="/css/styles.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="./js/validation.js"></script>
+	<script type="text/javascript" src="js/validation.js"></script>
 </head>
 <body>
 
