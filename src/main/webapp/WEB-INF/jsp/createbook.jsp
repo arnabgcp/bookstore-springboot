@@ -37,13 +37,11 @@
 </nav>
 
 <div class="content">
-<h3>Books Management Application Demo - Running on Google Kubernetes Engine</h3>
+Books Management Application Demo - Running on Google Kubernetes Engine
 </div>
 
  <div class="content2">
-                <h3>
-                Use this form to add new book to stock:
-                </h3>
+                <h3> Use this form to add new book to stock: </h3>
 </div>
 
         <div align="center" class="content1">
