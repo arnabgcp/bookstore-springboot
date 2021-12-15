@@ -4,7 +4,8 @@ metadata:
   name: bookstore
   annotations:
           ingress.gcp.kubernetes.io/pre-shared-cert: "mcrt-3e1790db-d210-4fcf-a41f-68682a4bce0f"
-          kubernetes.io/ingress.allow-http: "false"          
+          kubernetes.io/ingress.class: gce
+          kubernetes.io/ingress.global-static-ip-name: "bookstore-ip"         
 spec:
   backend:
     serviceName: frontend-service
