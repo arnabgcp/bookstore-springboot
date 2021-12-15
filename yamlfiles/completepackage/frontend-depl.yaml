@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: us-east1-docker.pkg.dev/noted-extension-333310/dockercoderegistry/bookstore-apache:1.6
+        image: gcr.io/noted-extension-333310/frontend:latest
         ports:
         - containerPort: 80

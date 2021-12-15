@@ -9,3 +9,30 @@ spec:
   backend:
     serviceName: frontend-service
     servicePort: 80
+  rules:
+  - http:
+      paths:
+      - path: /listallbooks
+        backend:
+          serviceName: listbook-service
+          servicePort: 80
+
+      - path: /addnewbook
+        backend:
+          serviceName: addbook-service
+          servicePort: 80
+        
+      - path: /showupdateform
+        backend:
+          serviceName: updatebook-service
+          servicePort: 80
+      
+      - path: /updatebook/*
+        backend:
+         serviceName: updatebook-service
+         servicePort: 80
+
+      - path: /deletebook/*
+        backend:
+          serviceName: deletebook-service
+          servicePort: 80
