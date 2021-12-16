@@ -16,9 +16,29 @@ spec:
     spec:
       containers:
       - name: deletebook
-        image: gcr.io/noted-extension-333310/delbook:latest
+        image: gcr.io/noted-extension-333310/deletebook:v10
         ports:
           - containerPort: 8080
+
+        env:
+         - name: MYSQL_USERNAME
+           valueFrom:
+              secretKeyRef:
+                name: mysql-secret
+                key: username
+
+         - name: MYSQL_PASSWORD
+           valueFrom:
+              secretKeyRef:
+                name: mysql-secret
+                key: password
+
+         - name: DB_HOST
+           valueFrom:
+              secretKeyRef:
+                name: mysql-secret
+                key: dbhost
+          
         readinessProbe:
             httpGet:
               path: /health
