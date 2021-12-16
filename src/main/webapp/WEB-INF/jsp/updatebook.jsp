@@ -58,13 +58,13 @@ Books Management Application Demo - Running on Google Kubernetes Engine
             <tr>
                 <th>Author: <font color="red">*</font></th>
                 <td>
-			<input type="text" name="author" id="author" size="5" value="<c:out value='${book.author}' />" />
+			<input type="text" name="author" id="author" size="60" value="<c:out value='${book.author}' />" />
                 </td>
             </tr>
             <tr>
                 <th>Price (in USD): <font color="red">*</font></th>
                 <td>
-			<input type="text" name="price" id="price" size="5" value="<c:out value='${book.price}' />" />
+			<input type="text" name="price" id="price" size="6" value="<c:out value='${book.price}' />" />
                 </td>
             </tr>
             <tr>
