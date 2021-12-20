@@ -41,7 +41,7 @@ Books Management Application Demo - Running on Google Kubernetes Engine
 </div>
 
  <div class="content2">
-                <h3> Use this form to add new book to stock : </h3>
+                <h3> Use this form to add new book to list : </h3>
 </div>
 
         <div align="center" class="content1">
@@ -54,7 +54,7 @@ Books Management Application Demo - Running on Google Kubernetes Engine
 		</td>
             </tr>
             <tr>
-                <th>Author: <font color="red">*</font></th>
+                <th>Author Name: <font color="red">*</font></th>
                 <td>
 			<input type="text" name="author" size="60" id="author" value="<c:out value='${book.author}' />"
                 </td>
