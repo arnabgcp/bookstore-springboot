@@ -3,9 +3,9 @@ kind: Ingress
 metadata:
   name: bookstore
   annotations:
-          ingress.gcp.kubernetes.io/pre-shared-cert: "gke-qa"
+          ingress.gcp.kubernetes.io/pre-shared-cert: "mcrt-4c78dc8b-c4e3-474c-973f-09d0ff22380d"
           kubernetes.io/ingress.class: gce
-          kubernetes.io/ingress.global-static-ip-name: "gke-qa-bookstore"        
+          kubernetes.io/ingress.global-static-ip-name: "bookstore-ip"        
           bernetes.io/ingress.allow-http: "false"
 spec:
   backend:

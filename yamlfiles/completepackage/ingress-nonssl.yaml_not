@@ -2,11 +2,6 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: bookstore
-  annotations:
-          ingress.gcp.kubernetes.io/pre-shared-cert: "gke-qa"
-          kubernetes.io/ingress.class: gce
-          kubernetes.io/ingress.global-static-ip-name: "gke-qa-bookstore"        
-          bernetes.io/ingress.allow-http: "false"
 spec:
   backend:
     serviceName: frontend-service
