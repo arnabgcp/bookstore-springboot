@@ -1,42 +1,48 @@
 <html>
-<!--This example uses the default bootstrap stylesheet-->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!--provides a full-width container that can expand or collapse based on the size of viewport-->
-
+<head>
+	<title>Books Management Application Demo - Running on Google Kubernetes Engine</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="./css/styles.css" rel="stylesheet" type="text/css">
+</head>
 <body>
-<title>
-Bookstore Management Application
-</title>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-2 col-sm-12 col-xs-12">
-            <nav id="navbar">
-                <h3>Menu</h3>
-                <!--content stacking for smaller screens-->
-                <ul class="nav nav-pills nav-stacked">
-                 <!--internal linking to the respective sections-->
-                    <a class="nav-link" href="mailto:karthick.pakkiriswamy@cognizant.com" rel="internal">
-                        <li>Help</li>
-                    </a>
-                    <a class="nav-link" href="mailto:karthick.pakkiriswamy@cognizant.com" rel="internal">
-                        <li>Report issues</li>
-                    </a>
-                 </ul>
-            </nav>
-        </div>
-        <div class="col-md-10 col-sm-12 col-xs-12">
-            <main id="main-doc">
-                <section class="main-section" id="Introduction" >
-                 <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
-                    <h3 style = "background: blue; color: white">Bookstore Management Application</h3>
-                    <article>
-                    <p>Requested resource not found on this server. Pls try again with a valid application URL.</p>
-                        </article>
-                </section>
-            </main>
-        </div>
-    </div>
+
+
+
+<div>
+<video id="myVideo" preload="" autoplay="" muted="" playsinline="" loop="">
+<source src="./media/gkehomepage.mp4" type="video/mp4">
+</video> 
 </div>
+
+
+<div class="content">
+<h3> Books Management Application Demo - Running on Google Kubernetes Engine </h3>
+</div>
+
+<div class="content2">
+<h3> Page you requested not found. Please report this issue for help or try again with a valid URL. </h3>
+</div>
+
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="./listallbooks"><li>Sign In</li></a>
+      <a href="/"><li>Sign Out</li></a>
+      <a href="mailto:karthick.pakkiriswamy@cognizant.com"><li>Report Issues</li></a>
+      </ul>
+  </div>
+</nav>
 </body>
 </html>
