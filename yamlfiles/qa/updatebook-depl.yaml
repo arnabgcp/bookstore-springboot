@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: updatebook
-        image: gcr.io/noted-extension-333310/updatebook:latest
+        image: pkarthick83/appinframodwithgke:updatebook-latest
         ports:
         - containerPort: 8080
 

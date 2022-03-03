@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: listbook
-        image: gcr.io/noted-extension-333310/listbook:latest
+        image: pkarthick83/appinframodwithgke:listbook-latest
         ports:
         - containerPort: 8080
 

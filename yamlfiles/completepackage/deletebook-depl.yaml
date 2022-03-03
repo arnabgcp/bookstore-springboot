@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: deletebook
-        image: gcr.io/noted-extension-333310/deletebook:v10
+        image: gcr.io/idea-monolithic-to-modern/deletebook:latest
         ports:
           - containerPort: 8080
 
