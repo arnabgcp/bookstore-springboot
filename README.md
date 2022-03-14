@@ -1,12 +1,16 @@
 # Google Cloud Platform environment setup and deploy modern application
 
-The following example shows how you can set up a [Google Kubernetes Engine (GKE) cluster](https://cloud.google.com/kubernetes-engine/) with terraform where modern aplication will be deployed and then set up an automated CI/CD pipeline using [Google Cloud Build](https://cloud.google.com/cloud-build/) for regular enhancements
+The following example shows how you can set up a [Google Kubernetes Engine (GKE) cluster](https://cloud.google.com/kubernetes-engine/) and [Cloud SQL DB](https://cloud.google.com/sql) with terraform where modern aplication will be deployed and then set up an automated CI/CD pipeline using [Google Cloud Build](https://cloud.google.com/cloud-build/) for regular enhancements
 
 ## What is Google Cloud Build?
 
 Cloud Build lets you build software quickly across all languages. Get complete control over defining custom workflows
 for building, testing, and deploying across multiple environments such as VMs, serverless, Kubernetes, or Firebase.
 You can find out more on the [Cloud Build](https://cloud.google.com/cloud-build/) website.
+
+## What is Google Cloud SQL ?
+
+Cloud SQL is a fully-managed database service that helps you set up, maintain, manage, and administer your relational databases on Google Cloud Platform. You can use Cloud SQL with MySQL, PostgreSQL, or SQL Server.You can find out more on the [Cloud SQL DB](https://cloud.google.com/sql) website.
 
 ## What is a Google Kubernetes Engine?
 
@@ -20,6 +24,7 @@ Build and a GKE cluster. Here are the steps:
 1. [Install the necessary tools](#installing-necessary-tools)
 1. [Configure GKE cluster and deploy code](#Configure-GKE-cluster-and-deploy-code)
 1. [Configure IAP and DNS ](#configure-iap-and-dns)
+1. [Connect Cloud SQL DB](#connect-cloud-SQL-DB)
 1. [Configure Cloud Build](#configuring-cloud-build)
 1. [Trigger a build by pushing changes to GIT Repository](#triggering-a-build)
 1. [View the deployment on a GKE cluster](#viewing-the-deployment)
@@ -113,6 +118,13 @@ At the end of `terraform apply`, we need to wait for 60 minutes (DNS refresh tak
 For [Identity aware proxy (IAP)](https://cloud.google.com/iap/docs/enabling-kubernetes-howto)  , please follow google documentation. Please follow the setps only upto my-secret creation, further steps have been taken care while [Configure GKE cluster and deploy code](#Configure-GKE-cluster-and-deploy-code) execution prod setup section.
 
 For DNS configuration please point your choise of domain adress to the previously noted public ip during [Configure GKE cluster and deploy code](#Configure-GKE-cluster-and-deploy-code) prod execution.
+
+
+## Connect Cloud SQL DB
+
+in [console](https://console.cloud.google.com/) please login with your credential and select required project. Please navigate to cloud sql and select the instance created by above terrfaorm script 
+
+
 
 
 ## Configuring Cloud Build
