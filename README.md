@@ -132,9 +132,9 @@ to access resources such as the GKE cluster.
 1. Next cloud build trigger needs to be added with below terraform code.
  
 1. If you haven't already, clone this repo:
-   - `$ git clone https://github.com/apskarthick/bookstoreonk8s.git`
-1. Make sure you are in the `terraform/gke-modernize-prod` example folder:
-   - `$ cd bookstoreonk8s/terraform/gke-modernize-prod`
+   - `$ git clone https://github.com/arnabgcp/BookStore.git`
+1. Make sure you are in the `gke-modernize` example folder:
+   - `$ cd BookStore/gke-modernize`
 1. please change below default fields of variables.tf file according to your setup
 
    - project (should be GCP exisitng project where cluster needs to be provisioned)
