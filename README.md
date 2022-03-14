@@ -102,25 +102,18 @@ This Terraform code will:
 - Create a publicly accessible GKE cluster
 - Deploy application containers on the GKE cluster (source docker images are stored on public docker hub)
 - Creates an [Ingress Service](https://kubernetes.io/docs/concepts/services-networking/ingress/) for accessing the application
-- Reserves a Public IP and shows the output (please take a note of this, we need this during [Configure IAP and DNS ](#configure-iap-and-dns)  section )
+- Reserve a Public IP and shows the output (please take a note of this, we need this during [Configure IAP and DNS ](#configure-iap-and-dns)  section )
+- create backend config and added annotations for IAP
+- applied all required yaml files for SSL configurarions
 
 At the end of `terraform apply`, we need to wait for 60 minutes (DNS refresh takes time) to have a working cluster with application running on it
 
 ## Configure IAP and DNS
 
-In addition to `terraform`, this guide relies on the `gcloud` and `kubectl` tools to view build information and manage
-the GKE cluster. This means that your system needs to be configured to be able to find `terraform`, `gcloud`, `kubectl`
-client utilities on the system `PATH`. Here are the installation guides for each tool:
+For [Identity aware proxy (IAP)](https://cloud.google.com/iap/docs/enabling-kubernetes-howto)  , please follow google documentation. Please follow the setps only upto my-secret creation, further steps have been taken care while [Apply the Terraform code](#apply-the-terraform-code) execution prod setup section.
 
-1. [`gcloud`](https://cloud.google.com/sdk/gcloud/)
-1. [`kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
-1. [`terraform`](https://learn.hashicorp.com/terraform/getting-started/install.html)
+For DNS configuration please point your choise of domain adress to the previously noted public ip during [Apply the Terraform code](#apply-the-terraform-code) prod execution.
 
-Make sure the binaries are discoverable in your `PATH` variable. See [this Stack Overflow
-post](https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix) for instructions on
-setting up your `PATH` on Unix, and [this
-post](https://stackoverflow.com/questions/1618280/where-can-i-set-path-to-make-exe-on-windows) for instructions on
-Windows.
 
 ## Configuring Cloud Build
 
