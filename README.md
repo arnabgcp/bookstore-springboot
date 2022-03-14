@@ -104,7 +104,7 @@ This Terraform code will:
 - Creates an [Ingress Service](https://kubernetes.io/docs/concepts/services-networking/ingress/) for accessing the application
 - Reserves a Public IP and shows the output (please take a note of this, we need this during [Configure IAP and DNS ](#configure-iap-and-dns)  section )
 
-At the end of `terraform apply`, we need to wait for 60 minutes to have a working cluster with application running on it
+At the end of `terraform apply`, we need to wait for 60 minutes (DNS refresh takes time) to have a working cluster with application running on it
 
 ## Configure IAP and DNS
 
