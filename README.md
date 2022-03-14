@@ -21,7 +21,7 @@ Build and a GKE cluster. Here are the steps:
 1. [Apply the Terraform code](#apply-the-terraform-code)
 1. [Configure IAP and DNS ](#configure-iap-and-dns)
 1. [Configure Cloud Build](#configuring-cloud-build)
-1. [Trigger a build by pushing changes to the Cloud Source Repository](#triggering-a-build)
+1. [Trigger a build by pushing changes to GIT Repository](#triggering-a-build)
 1. [View the deployment on a GKE cluster](#viewing-the-deployment)
 
 ## Installing necessary tools
