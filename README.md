@@ -67,7 +67,7 @@ QA Setup:
 
 This Terraform code will:
 
-- create a High Available Cloud SQL Data Base in the mentioned region
+- create a High Available Cloud SQL Data Base in the mentioned region and imports sample data into into the DB
 - Create a publicly accessible GKE cluster
 - Deploy application containers on the GKE cluster (source docker images are stored on public docker hub)
 - Creates an [Ingress Service](https://kubernetes.io/docs/concepts/services-networking/ingress/) for accessing the application
@@ -98,7 +98,7 @@ prod Setup
 
 This Terraform code will:
 
-- create a High Available Cloud SQL Data Base in the mentioned region
+- create a High Available Cloud SQL Data Base in the mentioned region and imports sample data into into the DB
 - Create a publicly accessible GKE cluster
 - Deploy application containers on the GKE cluster (source docker images are stored on public docker hub)
 - Creates an [Ingress Service](https://kubernetes.io/docs/concepts/services-networking/ingress/) for accessing the application
