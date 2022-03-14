@@ -18,7 +18,7 @@ In this guide we will walk through the steps necessary to set up a CI/CD pipelin
 Build and a GKE cluster. Here are the steps:
 
 1. [Install the necessary tools](#installing-necessary-tools)
-1. [Apply the Terraform code](#apply-the-terraform-code)
+1. [Configure GKE cluster and deploy code](#Configure-GKE-cluster-and-deploy-code)
 1. [Configure IAP and DNS ](#configure-iap-and-dns)
 1. [Configure Cloud Build](#configuring-cloud-build)
 1. [Trigger a build by pushing changes to GIT Repository](#triggering-a-build)
@@ -40,7 +40,7 @@ setting up your `PATH` on Unix, and [this
 post](https://stackoverflow.com/questions/1618280/where-can-i-set-path-to-make-exe-on-windows) for instructions on
 Windows.
 
-## Apply the Terraform Code
+## Configure GKE cluster and deploy code
 
 Now that we have installed necessary tools, we are ready to deploy all of the example resources in QA environment and PROD environment and also set up the Cloud
 Build triggers!
@@ -110,9 +110,9 @@ At the end of `terraform apply`, we need to wait for 60 minutes (DNS refresh tak
 
 ## Configure IAP and DNS
 
-For [Identity aware proxy (IAP)](https://cloud.google.com/iap/docs/enabling-kubernetes-howto)  , please follow google documentation. Please follow the setps only upto my-secret creation, further steps have been taken care while [Apply the Terraform code](#apply-the-terraform-code) execution prod setup section.
+For [Identity aware proxy (IAP)](https://cloud.google.com/iap/docs/enabling-kubernetes-howto)  , please follow google documentation. Please follow the setps only upto my-secret creation, further steps have been taken care while [Configure GKE cluster and deploy code](#Configure-GKE-cluster-and-deploy-code) execution prod setup section.
 
-For DNS configuration please point your choise of domain adress to the previously noted public ip during [Apply the Terraform code](#apply-the-terraform-code) prod execution.
+For DNS configuration please point your choise of domain adress to the previously noted public ip during [Configure GKE cluster and deploy code](#Configure-GKE-cluster-and-deploy-code) prod execution.
 
 
 ## Configuring Cloud Build
@@ -122,10 +122,31 @@ to access resources such as the GKE cluster.
 
 1. If you haven't already done so, ensure the [Cloud Build API is enabled](https://console.cloud.google.com/flows/enableapi?apiid=cloudbuild.googleapis.com) in your GCP project.
    - Alternatively you may run: `gcloud services enable cloudbuild.googleapis.com --project=$PROJECT`
-1. Next you will need to ensure the Cloud Build service account is able to access your project's GKE clusters:
-   - `$ PROJECT_NUM=$(gcloud projects list --filter="$PROJECT" --format="value(PROJECT_NUMBER)" --project=$PROJECT)`
-   - `$ SERVICE_ACCOUNT=${PROJECT_NUM}@cloudbuild.gserviceaccount.com`
-   - `$ gcloud projects add-iam-policy-binding $PROJECT --member=serviceAccount:$SERVICE_ACCOUNT --role=roles/container.developer --project=$PROJECT`
+1. Next you will need connect git repository from cloud build
+              - in [console](https://console.cloud.google.com/) please login with your credential and select required project
+              - go to cloud build and select connect repository
+              - select source as GitHub
+              - authenticate with github credentials
+              - select target repository
+              - check agreement requirements and connect
+1. Next cloud build trigger needs to be added with below terraform code.
+ 
+1. If you haven't already, clone this repo:
+   - `$ git clone https://github.com/apskarthick/bookstoreonk8s.git`
+1. Make sure you are in the `terraform/gke-modernize-prod` example folder:
+   - `$ cd bookstoreonk8s/terraform/gke-modernize-prod`
+1. please change below default fields of variables.tf file according to your setup
+
+   - project (should be GCP exisitng project where cluster needs to be provisioned)
+   - clsname (kubernetes cluster name of your choice)
+   - region (region of your choice for eg: us-central1)
+   
+1. Initialize terraform:
+   - `$ terraform init`
+1. Check the terraform plan:
+   - `$ terraform plan`
+1. Apply the terraform code:
+   - `$ terraform apply`
 
 For more information on the Cloud Build service account, refer to Appendix A at the bottom of this document.
 
@@ -168,17 +189,18 @@ Load Balancer. We can verify this by checking the output using `gcloud`:
    - `$ gcloud builds list --limit=5`
 1. Stream the logs for the most recent build and find the service details:
    - `$ gcloud builds log <BUILD_ID>`
-1. Open the external IP in your browser:
-   - `$ open <EXTERNAL_IP>`
+
 
 Or by using the `kubectl` command:
 
 1. Configure `kubectl` to use the GKE cluster:
    - `$ gcloud container clusters get-credentials example-private-cluster --region europe-west3`
 1. List the available services:
-   - `$ kubectl get services`
+   - `$ kubectl get ingress -n qa`
+   - `$ kubectl get ingress -n prod`
 1. Open the external IP in your browser:
    - `$ open <EXTERNAL_IP>`
+   - `$ open <domain adress>`
 
 ## Appendix A: Cloud Build Service Account
 
