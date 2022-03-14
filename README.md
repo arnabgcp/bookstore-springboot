@@ -42,9 +42,11 @@ Windows.
 
 ## Apply the Terraform Code
 
-Now that we have installed necessary tools, we are ready to deploy all of the example resources and also set up the Cloud
+Now that we have installed necessary tools, we are ready to deploy all of the example resources in QA environment and PROD environment and also set up the Cloud
 Build triggers!
 
+QA Setup:
+--------------------------------------------------------------------------------------
 1. If you haven't already, clone this repo:
    - `$ git clone https://github.com/arnabgcp/BookStore.git`
 1. Make sure you are in the `gke-modernize` example folder:
@@ -71,6 +73,38 @@ This Terraform code will:
 - Creates an [Ingress Service](https://kubernetes.io/docs/concepts/services-networking/ingress/) for accessing the application
 
 At the end of `terraform apply`, we need to wait for 5-10 minutes to have a working cluster with application running on it
+
+prod Setup
+------------------------------------------------------------------------------------------
+
+1. If you haven't already, clone this repo:
+   - `$ git clone https://github.com/apskarthick/bookstoreonk8s.git`
+1. Make sure you are in the `terraform/gke-modernize-prod` example folder:
+   - `$ cd bookstoreonk8s/terraform/gke-modernize-prod`
+1. please change below default fields of variables.tf file according to your setup
+
+   - project (should be GCP exisitng project where cluster needs to be provisioned)
+   - clsname (kubernetes cluster name of your choice)
+   - region (region of your choice for eg: us-central1)
+   
+1. Initialize terraform:
+   - `$ terraform init`
+1. Check the terraform plan:
+   - `$ terraform plan`
+1. Apply the terraform code:
+   - `$ terraform apply`
+   please take a note of the public ip
+1. go to section [Configure IAP and DNS ](#configure-iap-and-dns) for DNS and IAP setup
+
+This Terraform code will:
+
+- create a High Available Cloud SQL Data Base in the mentioned region
+- Create a publicly accessible GKE cluster
+- Deploy application containers on the GKE cluster (source docker images are stored on public docker hub)
+- Creates an [Ingress Service](https://kubernetes.io/docs/concepts/services-networking/ingress/) for accessing the application
+- Reserves a Public IP and shows the output (please take a note of this, we need this during [Configure IAP and DNS ](#configure-iap-and-dns)  section )
+
+At the end of `terraform apply`, we need to wait for 60 minutes to have a working cluster with application running on it
 
 ## Configure IAP and DNS
 
