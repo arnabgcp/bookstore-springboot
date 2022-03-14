@@ -18,8 +18,9 @@ In this guide we will walk through the steps necessary to set up a CI/CD pipelin
 Build and a GKE cluster. Here are the steps:
 
 1. [Install the necessary tools](#installing-necessary-tools)
-1. [Configure Cloud Build](#configuring-cloud-build)
 1. [Apply the Terraform code](#apply-the-terraform-code)
+1. [Configure IAP and DNS ](#configure-iap-and-dns)
+1. [Configure Cloud Build](#configuring-cloud-build)
 1. [Trigger a build by pushing changes to the Cloud Source Repository](#triggering-a-build)
 1. [View the deployment on a GKE cluster](#viewing-the-deployment)
 
@@ -38,20 +39,6 @@ post](https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-o
 setting up your `PATH` on Unix, and [this
 post](https://stackoverflow.com/questions/1618280/where-can-i-set-path-to-make-exe-on-windows) for instructions on
 Windows.
-
-## Configuring Cloud Build
-
-Your GCP project needs to be configured properly in order to use this example. This is necessary to allow Cloud Build
-to access resources such as the GKE cluster.
-
-1. If you haven't already done so, ensure the [Cloud Build API is enabled](https://console.cloud.google.com/flows/enableapi?apiid=cloudbuild.googleapis.com) in your GCP project.
-   - Alternatively you may run: `gcloud services enable cloudbuild.googleapis.com --project=$PROJECT`
-1. Next you will need to ensure the Cloud Build service account is able to access your project's GKE clusters:
-   - `$ PROJECT_NUM=$(gcloud projects list --filter="$PROJECT" --format="value(PROJECT_NUMBER)" --project=$PROJECT)`
-   - `$ SERVICE_ACCOUNT=${PROJECT_NUM}@cloudbuild.gserviceaccount.com`
-   - `$ gcloud projects add-iam-policy-binding $PROJECT --member=serviceAccount:$SERVICE_ACCOUNT --role=roles/container.developer --project=$PROJECT`
-
-For more information on the Cloud Build service account, refer to Appendix A at the bottom of this document.
 
 ## Apply the Terraform Code
 
@@ -85,6 +72,37 @@ This Terraform code will:
 - Create a Cloud Build Trigger to trigger builds in response to Cloud Source Repository changes.
 
 At the end of `terraform apply`, you should now have a working CI/CD pipeline deployed in Google Cloud Platform.
+
+## configure iap and dns
+
+In addition to `terraform`, this guide relies on the `gcloud` and `kubectl` tools to view build information and manage
+the GKE cluster. This means that your system needs to be configured to be able to find `terraform`, `gcloud`, `kubectl`
+client utilities on the system `PATH`. Here are the installation guides for each tool:
+
+1. [`gcloud`](https://cloud.google.com/sdk/gcloud/)
+1. [`kubectl`](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+1. [`terraform`](https://learn.hashicorp.com/terraform/getting-started/install.html)
+
+Make sure the binaries are discoverable in your `PATH` variable. See [this Stack Overflow
+post](https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix) for instructions on
+setting up your `PATH` on Unix, and [this
+post](https://stackoverflow.com/questions/1618280/where-can-i-set-path-to-make-exe-on-windows) for instructions on
+Windows.
+
+## Configuring Cloud Build
+
+Your GCP project needs to be configured properly in order to use this example. This is necessary to allow Cloud Build
+to access resources such as the GKE cluster.
+
+1. If you haven't already done so, ensure the [Cloud Build API is enabled](https://console.cloud.google.com/flows/enableapi?apiid=cloudbuild.googleapis.com) in your GCP project.
+   - Alternatively you may run: `gcloud services enable cloudbuild.googleapis.com --project=$PROJECT`
+1. Next you will need to ensure the Cloud Build service account is able to access your project's GKE clusters:
+   - `$ PROJECT_NUM=$(gcloud projects list --filter="$PROJECT" --format="value(PROJECT_NUMBER)" --project=$PROJECT)`
+   - `$ SERVICE_ACCOUNT=${PROJECT_NUM}@cloudbuild.gserviceaccount.com`
+   - `$ gcloud projects add-iam-policy-binding $PROJECT --member=serviceAccount:$SERVICE_ACCOUNT --role=roles/container.developer --project=$PROJECT`
+
+For more information on the Cloud Build service account, refer to Appendix A at the bottom of this document.
+
 
 ## Triggering a Build
 
