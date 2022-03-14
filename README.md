@@ -49,17 +49,16 @@ Build triggers!
    - `$ git clone https://github.com/arnabgcp/BookStore.git`
 1. Make sure you are in the `gke-modernize` example folder:
    - `$ cd BookStore/gke-modernize`
-1. change below default fields of variables.tf file according to your setup
+1. please change below default fields of variables.tf file according to your setup
 
-	- project (should be GCP exisitng project where cluster needs to be provisioned)
+   - project (should be GCP exisitng project where cluster needs to be provisioned)
    - clsname (kubernetes cluster name of your choice)
    - region (region of your choice for eg: us-central1)
- 
- 
+   
 1. Initialize terraform:
    - `$ terraform init`
 1. Check the terraform plan:
-- `$ terraform plan`
+   - `$ terraform plan`
 1. Apply the terraform code:
    - `$ terraform apply`
    
