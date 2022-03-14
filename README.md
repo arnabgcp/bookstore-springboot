@@ -65,13 +65,12 @@ Build triggers!
 
 This Terraform code will:
 
-- Create a VPC network to contain the resources
-- Deploy a publicly accessible GKE cluster
-- Create a repository on Cloud Source Repositories
-- Deploy a GCR repository for storing build artifacts
-- Create a Cloud Build Trigger to trigger builds in response to Cloud Source Repository changes.
+- create a High Available Cloud SQL Data Base in the mentioned region
+- Create a publicly accessible GKE cluster
+- Deploy application containers on the GKE cluster (source docker images are stored on public docker hub)
+- Creates an [Ingree Service](https://kubernetes.io/docs/concepts/services-networking/ingress/) for accessing the application
 
-At the end of `terraform apply`, you should now have a working CI/CD pipeline deployed in Google Cloud Platform.
+At the end of `terraform apply`, we need to wait for 5-10 minutes to have a working cluster with application running on it
 
 ## Configure IAP and DNS
 
