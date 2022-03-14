@@ -42,26 +42,27 @@ Windows.
 
 ## Apply the Terraform Code
 
-Now that we have configured Cloud Build, we are ready to deploy all of the example resources and also set up the Cloud
+Now that we have installed necessary tools, we are ready to deploy all of the example resources and also set up the Cloud
 Build triggers!
 
 1. If you haven't already, clone this repo:
-   - `$ git clone https://github.com/gruntwork-io/terraform-google-ci.git`
-1. Make sure you are in the `cloud-build-csr-gke` example folder:
-   - `$ cd examples/cloud-build-csr-gke`
+   - `$ git clone https://github.com/arnabgcp/BookStore.git`
+1. Make sure you are in the `gke-modernize` example folder:
+   - `$ cd BookStore/gke-modernize`
+1. change below default fields of variables.tf file according to your setup
+
+	- project (should be GCP exisitng project where cluster needs to be provisioned)
+   - clsname (kubernetes cluster name of your choice)
+   - region (region of your choice for eg: us-central1)
+ 
+ 
 1. Initialize terraform:
    - `$ terraform init`
 1. Check the terraform plan:
-   - `$ terraform plan`
+- `$ terraform plan`
 1. Apply the terraform code:
    - `$ terraform apply`
-   - Fill in the required variables based on your needs. For example:
-   - `project = "project-name-123456"`
-   - `region = "europe-west3"`
-   - `location = "europe-west3"`
-   - `repository_name = "example-repo"`
-   - `branch_name = "master"`
-   - `cluster_name = "example-private-cluster"`
+   
 
 This Terraform code will:
 
