@@ -143,12 +143,12 @@ to access resources such as the GKE cluster.
 1. If you haven't already done so, ensure the [Cloud Build API is enabled](https://console.cloud.google.com/flows/enableapi?apiid=cloudbuild.googleapis.com) in your GCP project.
    - Alternatively you may run: `gcloud services enable cloudbuild.googleapis.com --project=$PROJECT`
 1. Next you will need connect git repository from cloud build
-              - in [console](https://console.cloud.google.com/) please login with your credential and select required project
-              - go to cloud build and select connect repository
-              - select source as GitHub
-              - authenticate with github credentials
-              - select target repository
-              - check agreement requirements and connect
+       - in [console](https://console.cloud.google.com/) please login with your credential and select required project
+       - go to cloud build and select connect repository
+       - select source as GitHub
+       - authenticate with github credentials
+       - select target repository
+       - check agreement requirements and connect
 1. Next cloud build trigger needs to be added with below terraform code.
  
 1. If you haven't already, clone this repo:
