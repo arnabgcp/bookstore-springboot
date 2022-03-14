@@ -68,7 +68,7 @@ This Terraform code will:
 - create a High Available Cloud SQL Data Base in the mentioned region
 - Create a publicly accessible GKE cluster
 - Deploy application containers on the GKE cluster (source docker images are stored on public docker hub)
-- Creates an [Ingree Service](https://kubernetes.io/docs/concepts/services-networking/ingress/) for accessing the application
+- Creates an [Ingress Service](https://kubernetes.io/docs/concepts/services-networking/ingress/) for accessing the application
 
 At the end of `terraform apply`, we need to wait for 5-10 minutes to have a working cluster with application running on it
 
