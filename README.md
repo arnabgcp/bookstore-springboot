@@ -72,10 +72,11 @@ QA Setup:
 
 This Terraform code will:
 
-- create a High Available Cloud SQL Data Base in the mentioned region and imports sample data into into the DB
+- create a High Available Cloud SQL Data Base in the mentioned region and imports sample data into the Bookstore DB
 - Create a publicly accessible GKE cluster
 - Deploy application containers on the GKE cluster (source docker images are stored on public docker hub)
 - Creates an [Ingress Service](https://kubernetes.io/docs/concepts/services-networking/ingress/) for accessing the application
+- show output of DB insatance which will be used in step [Connect Cloud SQL DB](#connect-cloud-SQL-DB)
 
 At the end of `terraform apply`, we need to wait for 5-10 minutes to have a working cluster with application running on it
 
@@ -103,12 +104,13 @@ prod Setup
 
 This Terraform code will:
 
-- create a High Available Cloud SQL Data Base in the mentioned region and imports sample data into into the DB
+- create a High Available Cloud SQL Data Base in the mentioned region and imports sample data into the Bookstore DB
 - Create a publicly accessible GKE cluster
 - Deploy application containers on the GKE cluster (source docker images are stored on public docker hub)
 - Creates an [Ingress Service](https://kubernetes.io/docs/concepts/services-networking/ingress/) for accessing the application
 - Reserve a Public IP and shows the output (please take a note of this, we need this during [Configure IAP and DNS ](#configure-iap-and-dns)  section )
 - create backend config and added annotations for IAP
+- show output of DB insatance which will be used in step [Connect Cloud SQL DB](#connect-cloud-SQL-DB)
 - applied all required yaml files for SSL configurarions
 
 At the end of `terraform apply`, we need to wait for 60 minutes (DNS refresh takes time) to have a working cluster with application running on it
@@ -122,9 +124,14 @@ For DNS configuration please point your choise of domain adress to the previousl
 
 ## Connect Cloud SQL DB
 
-in [console](https://console.cloud.google.com/) please login with your credential and select required project. Please navigate to cloud sql and select the instance created by above terrfaorm script 
+in [console](https://console.cloud.google.com/) please login with your credential and select required project. Please navigate to cloud sql and select the instance created by above terrfaorm script. Please create a user and set password , please take a note of this user name and password for future use.
 
+please connec to this DB by running below command
 
+1. db instance should point to [Configure GKE cluster and deploy code](#Configure-GKE-cluster-and-deploy-code) QA/PROD setup DB insatnce output
+1. gcloud sql connect $db-instance --user=(created above) --quiet
+1. it will prompt for password, please use above created password
+1. now you can run regular Sql commands to verify DB details
 
 
 ## Configuring Cloud Build
