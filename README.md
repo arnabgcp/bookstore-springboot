@@ -73,7 +73,7 @@ This Terraform code will:
 
 At the end of `terraform apply`, you should now have a working CI/CD pipeline deployed in Google Cloud Platform.
 
-## configure iap and dns
+## Configure IAP and DNS
 
 In addition to `terraform`, this guide relies on the `gcloud` and `kubectl` tools to view build information and manage
 the GKE cluster. This means that your system needs to be configured to be able to find `terraform`, `gcloud`, `kubectl`
