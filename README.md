@@ -144,7 +144,7 @@ to access resources such as the GKE cluster.
    - Alternatively you may run: `gcloud services enable cloudbuild.googleapis.com --project=$PROJECT`
 1. Next you will need connect git repository from cloud build
 
-       - in [console](https://console.cloud.google.com/) please login with your credential and select required project
+       - in [Console] (https://console.cloud.google.com/) please login with your credential and select required project
        - go to cloud build and select connect repository
        - select source as GitHub
        - authenticate with github credentials
