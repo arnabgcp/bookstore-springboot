@@ -1,8 +1,6 @@
-# Cloud Build and Cloud Source Repositories Example
+# Google Cloud Platform environment setup and deploy modern application
 
-The following example shows how you can set up an automated CI/CD pipeline using [Google Cloud Build](https://cloud.google.com/cloud-build/)
-and a [Google Kubernetes Engine (GKE) cluster](https://cloud.google.com/kubernetes-engine/) that is triggered from a
-[Google Cloud Source Repository](https://cloud.google.com/source-repositories).
+The following example shows how you can set up a [Google Kubernetes Engine (GKE) cluster](https://cloud.google.com/kubernetes-engine/) with terraform where modern aplication will be deployed and then set up an automated CI/CD pipeline using [Google Cloud Build](https://cloud.google.com/cloud-build/) for regular enhancements
 
 ## What is Google Cloud Build?
 
@@ -10,11 +8,9 @@ Cloud Build lets you build software quickly across all languages. Get complete c
 for building, testing, and deploying across multiple environments such as VMs, serverless, Kubernetes, or Firebase.
 You can find out more on the [Cloud Build](https://cloud.google.com/cloud-build/) website.
 
-## What is a Google Cloud Source Repository?
+## What is a Google Kubernetes Engine?
 
-A Google Cloud Source Repository is a fully featured, private [Git](https://git-scm.com/) repository hosted on Google
-Cloud Platform. These repositories let you develop and deploy an app or service in a space that provides collaboration
-and version control for your code. You can find out more on the [Cloud Source Repositories documentation](https://cloud.google.com/source-repositories/docs/).
+Google Kubernetes Engine (GKE) provides a managed environment for deploying, managing, and scaling your containerized applications using Google infrastructure. The GKE environment consists of multiple machines (specifically, Compute Engine instances) grouped together to form a cluster. You can find out more on the [Google Kubernetes Engine (GKE) cluster](https://cloud.google.com/kubernetes-engine/)
 
 ## Overview
 
