@@ -80,7 +80,7 @@ This Terraform code will:
 
 At the end of `terraform apply`, we need to wait for 5-10 minutes to have a working cluster with application running on it
 
-prod Setup
+PROD Setup :
 ------------------------------------------------------------------------------------------
 
 1. If you haven't already, clone this repo:
