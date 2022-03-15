@@ -129,7 +129,7 @@ in [console](https://console.cloud.google.com/) please login with your credentia
 please connect to this DB by running below command
 
 1. INSTANCE_NAME should point to [Configure GKE cluster and deploy code](#Configure-GKE-cluster-and-deploy-code) QA/PROD setup DB insatnce output
-1. gcloud sql instances patch INSTANCE_NAME --assign-ip
+1. gcloud sql instances patch $INSTANCE_NAME --assign-ip
 1. gcloud sql connect $INSTANCE_NAME --user=(created above) --quiet
 1. it will prompt for password, please use above created password
 1. now you can run regular Sql commands to verify DB details
