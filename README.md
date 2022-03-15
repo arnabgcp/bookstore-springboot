@@ -18,8 +18,7 @@ Google Kubernetes Engine (GKE) provides a managed environment for deploying, man
 
 ## Overview
 
-In this guide we will walk through the steps necessary to set up a CI/CD pipeline using Cloud Source Repositories, Cloud
-Build and a GKE cluster. Here are the steps:
+In this guide we will walk through the steps necessary to set up a GKE cluster, cloud sql DB , deploy applications and create CI/CD pipeline using Cloud build. Here are the steps:
 
 1. [Install the necessary tools](#installing-necessary-tools)
 1. [Configure GKE cluster and deploy code](#Configure-GKE-cluster-and-deploy-code)
