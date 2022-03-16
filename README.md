@@ -1,6 +1,6 @@
 # Modern Application architecture
 
-This is modernized version of Bookstore application. We have further documented required steps below to provision this architecture on your own GCP project.
+This is modernized version of Bookstore application. We have further documented required steps in the [overview](#overview) section to provision this architecture on your own GCP project.
 
 Below GitHub Accounts are the contributers of this architecture.
 
