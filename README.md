@@ -134,6 +134,24 @@ At the end of `terraform apply`, we need to wait for 60 minutes (DNS refresh tak
 
 For [Identity aware proxy (IAP)](https://cloud.google.com/iap/docs/enabling-kubernetes-howto)  , please follow google documentation. Please follow the setps only upto my-secret creation, further steps have been taken care while [Configure GKE cluster and deploy code](#Configure-GKE-cluster-and-deploy-code) execution prod setup section.
 
+Once IAP setup is completed , please follow below steps to provide access to individual users or groups so that they can access the Bookstore application.
+
+1. If you haven't already, clone this repo:
+   - `$ git clone https://github.com/apskarthick/bookstoreonk8s.git`
+1. Make sure you are in the `terraform/gke-iap` example folder:
+   - `$ cd bookstoreonk8s/terraform/gke-iap`
+1. please change/add below fields of main.tf file according to your need
+
+   member = "user:testuserm@gmail.com"
+   
+1. Initialize terraform:
+   - `$ terraform init`
+1. Check the terraform plan:
+   - `$ terraform plan`
+1. Apply the terraform code:
+   - `$ terraform apply`
+
+
 For DNS configuration please point your choise of domain adress to the previously noted public ip during [Configure GKE cluster and deploy code](#Configure-GKE-cluster-and-deploy-code) prod execution.
 
 
