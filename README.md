@@ -2,10 +2,10 @@
 
 This is modernized version of Bookstore application. We have further documented required steps in the [overview](#overview) section to provision this architecture on your own GCP project.
 
-Below GitHub Accounts are the contributers of this architecture.
+Below individuals are the contributsrs of this prototype to modernize a fictional monolith app by leveraging Google Cloud Services including GKE and Cloud Build.
 
-- Karthick
-- Arnab
+- Karthick Pakkiriswamy
+- Arnab Dutta
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/95975264/158373079-a4e32503-42bb-4008-916a-bd737fcfa513.PNG" alt="Modern Application architecture"/>
