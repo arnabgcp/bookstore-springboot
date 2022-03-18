@@ -280,7 +280,7 @@ bookstore-updatebook-7cb6fc7cb7-9sjdn   1/1     Running   0          3h7m
 bookstore-updatebook-7cb6fc7cb7-d4njk   1/1     Running   0          3h7m
 bookstore-updatebook-7cb6fc7cb7-k47vn   1/1     Running   0          3h7m
 
----------------------------------------------------------------------------------
+
 Deployments:
 
 NAME                   READY   UP-TO-DATE   AVAILABLE   AGE
