@@ -342,7 +342,7 @@ Bookstore application add new book page:
 Bookstore application edit existing book page:
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/95975264/158983582-7d688560-f21a-4d96-9e09-b6870b236db7.png" alt="edit existing book"/>
+<img src="https://user-images.githubusercontent.com/95975264/158984310-e30db8d1-0d63-49bc-b9a0-8552148fb19c.png" alt="edit existing book"/>
 </p>
 
 
