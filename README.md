@@ -321,11 +321,30 @@ Bookstore application Home Page:
 <img src="https://user-images.githubusercontent.com/95975264/158982528-7443d2e1-d3e1-4ddd-8620-359a40008803.png" alt="Bookstore home page"/>
 </p>
 
-Bookstore application list all books Page:
+--------------------------------------------------------------------------------------------
+
+Bookstore application Books details Page:
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/95975264/158982943-2f86aa3b-8425-4d59-bbbc-4b0d85e66dba.png" alt="List all books page"/>
 </p>
+
+--------------------------------------------------------------------------------------------
+
+Bookstore application add new book page:
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/95975264/158983582-7d688560-f21a-4d96-9e09-b6870b236db7.png" alt="add new book"/>
+</p>
+
+--------------------------------------------------------------------------------------------
+
+Bookstore application edit existing book page:
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/95975264/158983582-7d688560-f21a-4d96-9e09-b6870b236db7.png" alt="edit existing book"/>
+</p>
+
 
 ## Appendix C: Terraform state validation
 
