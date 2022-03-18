@@ -315,12 +315,11 @@ Secret:
    
 ## Appendix B: Modern applications screens
 
-Cloud Build executes your builds using a service account, a special Google account that executes builds on your behalf. The email for
-the Cloud Build service account is `[PROJECT_NUMBER]@cloudbuild.gserviceaccount.com`. When you enable the Cloud Build API, the service
-account is automatically created and granted the Cloud Build Service Account role for your project. This role is sufficient for severa;
-tasks, including fetching code from Cloud Source Repositories, pushing and pulling Docker images to Container Registry, however it
-does not allow Cloud Build to deploy to Kubernetes Engine clusters. Therefore you need to manually enable our service account to
-perform these actions by granting the account additional IAM roles. For more information, refer to: https://cloud.google.com/cloud-build/docs/securing-builds/set-service-account-permissions.
+Home Page:
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/95975264/158982528-7443d2e1-d3e1-4ddd-8620-359a40008803.png" alt="Bookstore home page"/>
+</p>
 
 ## Appendix C: Terraform state validation
 
