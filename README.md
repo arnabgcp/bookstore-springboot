@@ -348,12 +348,26 @@ Bookstore application edit existing book page:
 
 ## Appendix C: Terraform state validation
 
-Cloud Build executes your builds using a service account, a special Google account that executes builds on your behalf. The email for
-the Cloud Build service account is `[PROJECT_NUMBER]@cloudbuild.gserviceaccount.com`. When you enable the Cloud Build API, the service
-account is automatically created and granted the Cloud Build Service Account role for your project. This role is sufficient for severa;
-tasks, including fetching code from Cloud Source Repositories, pushing and pulling Docker images to Container Registry, however it
-does not allow Cloud Build to deploy to Kubernetes Engine clusters. Therefore you need to manually enable our service account to
-perform these actions by granting the account additional IAM roles. For more information, refer to: https://cloud.google.com/cloud-build/docs/securing-builds/set-service-account-permissions.
+Since we are managing the entire infra structure with terraform, please check terraform state once environment is provisoned
+
+         $ terraform state list
+         data.google_compute_network.my-network
+         google_compute_global_address.bookstore_qa_ip_address
+         google_compute_global_address.private_ip_address
+         google_container_cluster.primary
+         google_container_node_pool.primary_nodes
+         google_project_service.svc1
+         google_project_service.svc2
+         google_project_service.svc3
+         google_project_service.svc4
+         google_service_networking_connection.private_vpc_connection
+         google_sql_database.qa_database
+         google_sql_database_instance.qa-db
+         google_sql_user.qa_users
+         null_resource.qa_gkesetup_yaml
+         random_integer.ri
+         random_integer.rs
+
 
 ## Appendix D: Cloud Build Service Account
 
