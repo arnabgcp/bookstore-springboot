@@ -257,7 +257,81 @@ Or by using the `kubectl` command:
    - `$ open <EXTERNAL_IP>`
    - `$ open <domain adress>`
 
-## Appendix A: Cloud Build Service Account
+## Appendix A: Validation of Kubernetes objects
+
+Once application is deployed on kubernetes cluster please validate below objects. 
+
+PODs: Pleae note those randomly generated binary numbers (for example after bookstore-addbook-******** ) and age can be different in your environment
+
+NAME                                    READY   STATUS    RESTARTS   AGE
+bookstore-addbook-6468488cdf-kvrfx      1/1     Running   0          3h7m
+bookstore-addbook-6468488cdf-pn6wk      1/1     Running   0          3h7m
+bookstore-addbook-6468488cdf-qrcm2      1/1     Running   0          3h7m
+bookstore-deletebook-5c794f5c99-bjk76   1/1     Running   0          3h7m
+bookstore-deletebook-5c794f5c99-n9rwm   1/1     Running   0          3h7m
+bookstore-deletebook-5c794f5c99-pd2s2   1/1     Running   0          3h7m
+bookstore-frontend-677745d846-5vtbz     1/1     Running   0          3h7m
+bookstore-frontend-677745d846-bdhgg     1/1     Running   0          3h7m
+bookstore-frontend-677745d846-r262r     1/1     Running   0          3h7m
+bookstore-listbook-5d8f785d8-b9j2n      1/1     Running   0          3h7m
+bookstore-listbook-5d8f785d8-dtx7v      1/1     Running   0          3h7m
+bookstore-listbook-5d8f785d8-v8hlr      1/1     Running   0          3h7m
+bookstore-updatebook-7cb6fc7cb7-9sjdn   1/1     Running   0          3h7m
+bookstore-updatebook-7cb6fc7cb7-d4njk   1/1     Running   0          3h7m
+bookstore-updatebook-7cb6fc7cb7-k47vn   1/1     Running   0          3h7m
+
+---------------------------------------------------------------------------------
+Deployments:
+
+NAME                   READY   UP-TO-DATE   AVAILABLE   AGE
+bookstore-addbook      3/3     3            3           3h7m
+bookstore-deletebook   3/3     3            3           3h7m
+bookstore-frontend     3/3     3            3           3h7m
+bookstore-listbook     3/3     3            3           3h7m
+bookstore-updatebook   3/3     3            3           3h7m
+
+----------------------------------------------------------------------------------
+Services: Please note the ip address ( cluster ip column ******) and mapped port (80:*****) can be different in your environment 
+
+NAME                 TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+addbook-service      NodePort   10.96.201.99    <none>        80:32650/TCP   3h8m
+deletebook-service   NodePort   10.96.203.161   <none>        80:31337/TCP   3h8m
+frontend-service     NodePort   10.96.192.254   <none>        80:31736/TCP   3h8m
+listbook-service     NodePort   10.96.205.123   <none>        80:31994/TCP   3h8m
+updatebook-service   NodePort   10.96.206.36    <none>        80:31297/TCP   3h8m
+
+----------------------------------------------------------------------------------   
+Ingress: Please note the ip (clolumn address) adress can be differnet in your environment
+   
+NAME                CLASS    HOSTS   ADDRESS           PORTS   AGE
+bookstore-ingress   <none>   *       107.178.241.193   80      3h10m
+
+----------------------------------------------------------------------------------   
+Secret:
+   
+NAME                  TYPE                                  DATA   AGE
+mysql-secret          Opaque                                3      3h11m
+   
+   
+## Appendix B: Modern applications screens
+
+Cloud Build executes your builds using a service account, a special Google account that executes builds on your behalf. The email for
+the Cloud Build service account is `[PROJECT_NUMBER]@cloudbuild.gserviceaccount.com`. When you enable the Cloud Build API, the service
+account is automatically created and granted the Cloud Build Service Account role for your project. This role is sufficient for severa;
+tasks, including fetching code from Cloud Source Repositories, pushing and pulling Docker images to Container Registry, however it
+does not allow Cloud Build to deploy to Kubernetes Engine clusters. Therefore you need to manually enable our service account to
+perform these actions by granting the account additional IAM roles. For more information, refer to: https://cloud.google.com/cloud-build/docs/securing-builds/set-service-account-permissions.
+
+## Appendix C: Terraform state validation
+
+Cloud Build executes your builds using a service account, a special Google account that executes builds on your behalf. The email for
+the Cloud Build service account is `[PROJECT_NUMBER]@cloudbuild.gserviceaccount.com`. When you enable the Cloud Build API, the service
+account is automatically created and granted the Cloud Build Service Account role for your project. This role is sufficient for severa;
+tasks, including fetching code from Cloud Source Repositories, pushing and pulling Docker images to Container Registry, however it
+does not allow Cloud Build to deploy to Kubernetes Engine clusters. Therefore you need to manually enable our service account to
+perform these actions by granting the account additional IAM roles. For more information, refer to: https://cloud.google.com/cloud-build/docs/securing-builds/set-service-account-permissions.
+
+## Appendix D: Cloud Build Service Account
 
 Cloud Build executes your builds using a service account, a special Google account that executes builds on your behalf. The email for
 the Cloud Build service account is `[PROJECT_NUMBER]@cloudbuild.gserviceaccount.com`. When you enable the Cloud Build API, the service
