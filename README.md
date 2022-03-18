@@ -373,7 +373,40 @@ Since we are managing the entire infra structure with terraform, please check te
          random_integer.rs
 
 
-## Appendix D: Cloud Build Service Account
+## Appendix D: Github structure descriptions
+
+Once you clone repository 'https://github.com/apskarthick/bookstoreonk8s.git' in your local directory, you can see below folders. 
+
+Please make a note only revent folder/files description added below are relevent for this modernized application, you need to ignore other folders/files
+
+- add-book: 
+     - src: source code for add book application
+     - dockerfile: docker image build file
+     - cloubuild.yaml: continuous deployment configuation file for cloud build
+- delete-book:
+     - dockerfile: docker image build file
+     - delete.py: source code 
+- list-books:
+     - src: source code for list books application
+     - dockerfile: docker image build file
+     - cloubuild.yaml: continuous deployment configuation file for cloud build
+- update-books:
+     - src: source code for update books application
+     - dockerfile: docker image build file
+     - cloubuild.yaml: continuous deployment configuation file for cloud build
+- frontend:
+     - public-html: bookstore application home page static files
+     - dockerfile: docker image build file
+     - cloubuild.yaml: continuous deployment configuation file for cloud build
+- terraform:
+     - gke-modernize-prod: production terraform code to provision the environment
+     - gke-iap: iap terraform code to grant access to users
+- yaml
+     - prod: all yaml files to be applied on kubernetes cluster during PROD setup
+     - qa: all yaml files to be applied on kubernetes cluster during QA setup
+
+
+## Appendix E: Cloud Build Service Account
 
 Cloud Build executes your builds using a service account, a special Google account that executes builds on your behalf. The email for
 the Cloud Build service account is `[PROJECT_NUMBER]@cloudbuild.gserviceaccount.com`. When you enable the Cloud Build API, the service
