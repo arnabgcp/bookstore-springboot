@@ -279,38 +279,38 @@ PODs: Pleae note those randomly generated binary numbers (for example after book
             bookstore-updatebook-7cb6fc7cb7-9sjdn   1/1     Running   0          3h7m
             bookstore-updatebook-7cb6fc7cb7-d4njk   1/1     Running   0          3h7m
             bookstore-updatebook-7cb6fc7cb7-k47vn   1/1     Running   0          3h7m
-
+---------------------------------------------------------------------------------
 
 Deployments:
 
-NAME                   READY   UP-TO-DATE   AVAILABLE   AGE
-bookstore-addbook      3/3     3            3           3h7m
-bookstore-deletebook   3/3     3            3           3h7m
-bookstore-frontend     3/3     3            3           3h7m
-bookstore-listbook     3/3     3            3           3h7m
-bookstore-updatebook   3/3     3            3           3h7m
+            NAME                   READY   UP-TO-DATE   AVAILABLE   AGE
+            bookstore-addbook      3/3     3            3           3h7m
+            bookstore-deletebook   3/3     3            3           3h7m
+            bookstore-frontend     3/3     3            3           3h7m
+            bookstore-listbook     3/3     3            3           3h7m
+            bookstore-updatebook   3/3     3            3           3h7m
 
 ----------------------------------------------------------------------------------
-Services: Please note the ip address ( cluster ip column ******) and mapped port (80:*****) can be different in your environment 
+Services: Please note the ip address ( cluster ip column *******) and mapped port (80:*****) can be different in your environment 
 
-NAME                 TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
-addbook-service      NodePort   10.96.201.99    <none>        80:32650/TCP   3h8m
-deletebook-service   NodePort   10.96.203.161   <none>        80:31337/TCP   3h8m
-frontend-service     NodePort   10.96.192.254   <none>        80:31736/TCP   3h8m
-listbook-service     NodePort   10.96.205.123   <none>        80:31994/TCP   3h8m
-updatebook-service   NodePort   10.96.206.36    <none>        80:31297/TCP   3h8m
+            NAME                 TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+            addbook-service      NodePort   10.96.201.99    <none>        80:32650/TCP   3h8m
+            deletebook-service   NodePort   10.96.203.161   <none>        80:31337/TCP   3h8m
+            frontend-service     NodePort   10.96.192.254   <none>        80:31736/TCP   3h8m
+            listbook-service     NodePort   10.96.205.123   <none>        80:31994/TCP   3h8m
+            updatebook-service   NodePort   10.96.206.36    <none>        80:31297/TCP   3h8m
 
 ----------------------------------------------------------------------------------   
 Ingress: Please note the ip (clolumn address) adress can be differnet in your environment
    
-NAME                CLASS    HOSTS   ADDRESS           PORTS   AGE
-bookstore-ingress   <none>   *       107.178.241.193   80      3h10m
+            NAME                CLASS    HOSTS   ADDRESS           PORTS   AGE
+            bookstore-ingress   <none>   *       107.178.241.193   80      3h10m
 
 ----------------------------------------------------------------------------------   
 Secret:
    
-NAME                  TYPE                                  DATA   AGE
-mysql-secret          Opaque                                3      3h11m
+            NAME                  TYPE                                  DATA   AGE
+            mysql-secret          Opaque                                3      3h11m
    
    
 ## Appendix B: Modern applications screens
