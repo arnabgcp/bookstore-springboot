@@ -175,6 +175,10 @@ please connect to this DB by running below command
 Your GCP project needs to be configured properly in order to use this example. This is necessary to allow Cloud Build
 to access resources such as the GKE cluster.
 
+Please refer Appendix D for more information about github repository details.
+
+1. Please clone repository 'https://github.com/apskarthick/bookstoreonk8s.git' to your own github account and start following steps
+
 1. If you haven't already done so, ensure the [Cloud Build API is enabled](https://console.cloud.google.com/flows/enableapi?apiid=cloudbuild.googleapis.com) in your GCP project.
    - Alternatively you may run: `gcloud services enable cloudbuild.googleapis.com --project=$PROJECT`
 1. Next you will need connect git repository from cloud build
@@ -191,12 +195,14 @@ to access resources such as the GKE cluster.
 1. If you haven't already, clone this repo:
    - `$ git clone https://github.com/arnabgcp/BookStore.git`
 1. Make sure you are in the `gke-modernize` example folder:
-   - `$ cd BookStore/gke-modernize`
+   - `$ cd BookStore/cloud-build`
 1. please change below default fields of variables.tf file according to your setup
 
    - project (should be GCP exisitng project where cluster needs to be provisioned)
    - clsname (kubernetes cluster name of your choice)
    - region (region of your choice for eg: us-central1)
+   - owner (your github username)
+   - branch (your github branch name)
    
 1. Initialize terraform:
    - `$ terraform init`
@@ -205,25 +211,21 @@ to access resources such as the GKE cluster.
 1. Apply the terraform code:
    - `$ terraform apply`
 
-For more information on the Cloud Build service account, refer to Appendix D at the bottom of this document.
+For more information on the Cloud Build service account, refer to Appendix E at the bottom of this document.
 
 
 ## Triggering a Build
 
-To trigger a build we need to commit and push some changes to the Cloud Source Repository. For the purposes of this
-example, we have prepared a [sample GitHub repository](https://github.com/gruntwork-io/sample-app-docker) with a
-basic application. We recommend you clone this repository and push it to the Cloud Source Repository that was created
-in the previous step.
+To trigger a build we need to commit and push some changes to the Github Repository. 
 
-1. Clone the `sample-app-docker` repo to an empty directory outside of this example:
-   - `$ git clone https://github.com/gruntwork-io/sample-app-docker.git`
-1. Add the the Cloud Source Repository as a remote:
-   - `$ git remote google ssh://[EMAIL]@source.developers.google.com:2022/p/[PROJECT_ID]/r/[REPO_NAME]`
-   - **Note:** Be sure to replace the [EMAIL] (Google IAM user's address), [PROJECT_ID] and [REPO_NAME] with your values.
+1. Clone your github repo to an empty directory where you checked in our code changes and configured cloud build in the previous step like below example:
+   - `$ git clone https://github.com/apskarthick/bookstoreonk8s.git`
+1. Make changes to any source code 
 1. Push the sample app to the Cloud Source Repository
-   - `$ git push --all google`
+   - `$ git commit -m "checked in new changes"
+   - `$ git push 
 
-After you've pushed the changes to Google Source Repositories, Cloud Build will automatically trigger a new build. You
+After you've pushed the changes to Git , Cloud Build will automatically trigger a new build. You
 can view the build status directly in the [GCP console](https://console.cloud.google.com/cloud-build/builds).
 
 ![Cloud Build History](_docs/gcp-build-history.png)
@@ -234,7 +236,7 @@ Or by using the `gcloud` CLI tool:
 $ gcloud builds list --limit=5
 ```
 
-During the build Cloud Build will install the sample app's dependencies, execute the tests, build a docker image,
+During the build Cloud Build will install the Bookstore app's dependencies, execute the tests, build a docker image,
 push it to the GCR registry then create a deployment on the GKE cluster.
 
 ## Viewing the Deployment
