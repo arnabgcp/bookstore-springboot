@@ -263,22 +263,22 @@ Once application is deployed on kubernetes cluster please validate below objects
 
 PODs: Pleae note those randomly generated binary numbers (for example after bookstore-addbook-******** ) and age can be different in your environment
 
-NAME                                    READY   STATUS    RESTARTS   AGE
-bookstore-addbook-6468488cdf-kvrfx      1/1     Running   0          3h7m
-bookstore-addbook-6468488cdf-pn6wk      1/1     Running   0          3h7m
-bookstore-addbook-6468488cdf-qrcm2      1/1     Running   0          3h7m
-bookstore-deletebook-5c794f5c99-bjk76   1/1     Running   0          3h7m
-bookstore-deletebook-5c794f5c99-n9rwm   1/1     Running   0          3h7m
-bookstore-deletebook-5c794f5c99-pd2s2   1/1     Running   0          3h7m
-bookstore-frontend-677745d846-5vtbz     1/1     Running   0          3h7m
-bookstore-frontend-677745d846-bdhgg     1/1     Running   0          3h7m
-bookstore-frontend-677745d846-r262r     1/1     Running   0          3h7m
-bookstore-listbook-5d8f785d8-b9j2n      1/1     Running   0          3h7m
-bookstore-listbook-5d8f785d8-dtx7v      1/1     Running   0          3h7m
-bookstore-listbook-5d8f785d8-v8hlr      1/1     Running   0          3h7m
-bookstore-updatebook-7cb6fc7cb7-9sjdn   1/1     Running   0          3h7m
-bookstore-updatebook-7cb6fc7cb7-d4njk   1/1     Running   0          3h7m
-bookstore-updatebook-7cb6fc7cb7-k47vn   1/1     Running   0          3h7m
+            NAME                                    READY   STATUS    RESTARTS   AGE
+            bookstore-addbook-6468488cdf-kvrfx      1/1     Running   0          3h7m
+            bookstore-addbook-6468488cdf-pn6wk      1/1     Running   0          3h7m
+            bookstore-addbook-6468488cdf-qrcm2      1/1     Running   0          3h7m
+            bookstore-deletebook-5c794f5c99-bjk76   1/1     Running   0          3h7m
+            bookstore-deletebook-5c794f5c99-n9rwm   1/1     Running   0          3h7m
+            bookstore-deletebook-5c794f5c99-pd2s2   1/1     Running   0          3h7m
+            bookstore-frontend-677745d846-5vtbz     1/1     Running   0          3h7m
+            bookstore-frontend-677745d846-bdhgg     1/1     Running   0          3h7m
+            bookstore-frontend-677745d846-r262r     1/1     Running   0          3h7m
+            bookstore-listbook-5d8f785d8-b9j2n      1/1     Running   0          3h7m
+            bookstore-listbook-5d8f785d8-dtx7v      1/1     Running   0          3h7m
+            bookstore-listbook-5d8f785d8-v8hlr      1/1     Running   0          3h7m
+            bookstore-updatebook-7cb6fc7cb7-9sjdn   1/1     Running   0          3h7m
+            bookstore-updatebook-7cb6fc7cb7-d4njk   1/1     Running   0          3h7m
+            bookstore-updatebook-7cb6fc7cb7-k47vn   1/1     Running   0          3h7m
 
 
 Deployments:
