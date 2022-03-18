@@ -130,6 +130,8 @@ This Terraform code will:
 
 At the end of `terraform apply`, we need to wait for 60 minutes (DNS refresh takes time) to have a working cluster with application running on it
 
+For more information on the application functionality ,refer to Appendix B at the bottom of this document.
+
 ## Configure IAP and DNS
 
 For [Identity aware proxy (IAP)](https://cloud.google.com/iap/docs/enabling-kubernetes-howto)  , please follow google documentation. Please follow the setps only upto my-secret creation, further steps have been taken care while [Configure GKE cluster and deploy code](#Configure-GKE-cluster-and-deploy-code) execution prod setup section.
@@ -203,7 +205,7 @@ to access resources such as the GKE cluster.
 1. Apply the terraform code:
    - `$ terraform apply`
 
-For more information on the Cloud Build service account, refer to Appendix A at the bottom of this document.
+For more information on the Cloud Build service account, refer to Appendix D at the bottom of this document.
 
 
 ## Triggering a Build
@@ -314,6 +316,8 @@ Secret:
    
    
 ## Appendix B: Modern applications screens
+
+Application funcionality pages have been documented here
 
 Bookstore application Home Page:
 
