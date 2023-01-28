@@ -16,7 +16,7 @@ resource "google_compute_network" "axis-test" {
 }
 
 resource "google_compute_instance" "default" {
-  name         = "test"
+  name         = "test1"
   machine_type = "e2-small"
   zone         = "us-central1-a"
   tags         = ["web"]
